@@ -39,7 +39,8 @@ namespace TecnicasProyecto4
                     {
 
                         String texto = dt.Rows[0][0].ToString();
-                        Admi formulario = new Admi(texto);
+                        String tipo = dt.Rows[0][1].ToString();
+                        Admi formulario = new Admi(texto, tipo);
                         formulario.Visible = true;
                         Visible = false;
 

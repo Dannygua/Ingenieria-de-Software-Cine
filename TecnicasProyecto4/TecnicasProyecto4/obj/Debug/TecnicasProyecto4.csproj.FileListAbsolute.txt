@@ -20,3 +20,6 @@ E:\Politecnica\Tecnicas\TecnicasProyecto4\TecnicasProyecto4\obj\Debug\TecnicasPr
 E:\Politecnica\Tecnicas\TecnicasProyecto4\TecnicasProyecto4\obj\Debug\TecnicasProyecto4.Compra.resources
 E:\Politecnica\Tecnicas\TecnicasProyecto4\TecnicasProyecto4\obj\Debug\TecnicasProyecto4.RegistrarAdmi.resources
 E:\Politecnica\Tecnicas\TecnicasProyecto4\TecnicasProyecto4\obj\Debug\TecnicasProyecto4.Inicio.resources
+E:\Politecnica\Tecnicas\TecnicasProyecto4\TecnicasProyecto4\obj\Debug\TecnicasProyecto4.VerUsers.resources
+E:\Politecnica\Tecnicas\TecnicasProyecto4\TecnicasProyecto4\obj\Debug\TecnicasProyecto4.ModPelicula.resources
+E:\Politecnica\Tecnicas\TecnicasProyecto4\TecnicasProyecto4\obj\Debug\TecnicasProyecto4.Venta.resources

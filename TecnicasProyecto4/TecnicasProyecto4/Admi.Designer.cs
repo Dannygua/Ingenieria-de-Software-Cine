@@ -38,11 +38,15 @@
             this.button6 = new System.Windows.Forms.Button();
             this.barramenu = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnCS = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
+            this.ModPeli = new System.Windows.Forms.Button();
             this.btnCatalogo = new System.Windows.Forms.Button();
             this.barracontenido = new System.Windows.Forms.Panel();
             this.barrainicio.SuspendLayout();
@@ -148,6 +152,7 @@
             this.button7.TabIndex = 0;
             this.button7.Text = "VENTAS";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button6
             // 
@@ -168,11 +173,15 @@
             // 
             this.barramenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(50)))), ((int)(((byte)(83)))));
             this.barramenu.Controls.Add(this.panel3);
+            this.barramenu.Controls.Add(this.panel5);
             this.barramenu.Controls.Add(this.panel2);
+            this.barramenu.Controls.Add(this.panel4);
             this.barramenu.Controls.Add(this.panel1);
             this.barramenu.Controls.Add(this.btnCS);
             this.barramenu.Controls.Add(this.button3);
+            this.barramenu.Controls.Add(this.button5);
             this.barramenu.Controls.Add(this.button2);
+            this.barramenu.Controls.Add(this.ModPeli);
             this.barramenu.Controls.Add(this.btnCatalogo);
             this.barramenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.barramenu.Location = new System.Drawing.Point(0, 126);
@@ -184,20 +193,38 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(95)))), ((int)(((byte)(151)))));
-            this.panel3.Location = new System.Drawing.Point(1, 151);
+            this.panel3.Location = new System.Drawing.Point(1, 273);
             this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(8, 45);
             this.panel3.TabIndex = 0;
             // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(95)))), ((int)(((byte)(151)))));
+            this.panel5.Location = new System.Drawing.Point(1, 213);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(8, 45);
+            this.panel5.TabIndex = 0;
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(95)))), ((int)(((byte)(151)))));
-            this.panel2.Location = new System.Drawing.Point(1, 92);
+            this.panel2.Location = new System.Drawing.Point(1, 152);
             this.panel2.Margin = new System.Windows.Forms.Padding(2);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(8, 45);
             this.panel2.TabIndex = 0;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(95)))), ((int)(((byte)(151)))));
+            this.panel4.Location = new System.Drawing.Point(2, 92);
+            this.panel4.Margin = new System.Windows.Forms.Padding(2);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(8, 45);
+            this.panel4.TabIndex = 0;
             // 
             // panel1
             // 
@@ -229,7 +256,7 @@
             this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(95)))), ((int)(((byte)(151)))));
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(8, 151);
+            this.button3.Location = new System.Drawing.Point(8, 273);
             this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(236, 45);
@@ -238,13 +265,28 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // button5
+            // 
+            this.button5.FlatAppearance.BorderSize = 0;
+            this.button5.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(95)))), ((int)(((byte)(151)))));
+            this.button5.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button5.ForeColor = System.Drawing.Color.White;
+            this.button5.Location = new System.Drawing.Point(8, 213);
+            this.button5.Margin = new System.Windows.Forms.Padding(2);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(236, 45);
+            this.button5.TabIndex = 0;
+            this.button5.Text = "MODIFICAR DULCERIA";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button2_Click);
+            // 
             // button2
             // 
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(95)))), ((int)(((byte)(151)))));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.ForeColor = System.Drawing.Color.White;
-            this.button2.Location = new System.Drawing.Point(8, 92);
+            this.button2.Location = new System.Drawing.Point(8, 152);
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(236, 45);
@@ -252,6 +294,23 @@
             this.button2.Text = "DULCERIA";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // ModPeli
+            // 
+            this.ModPeli.FlatAppearance.BorderSize = 0;
+            this.ModPeli.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(95)))), ((int)(((byte)(151)))));
+            this.ModPeli.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ModPeli.ForeColor = System.Drawing.Color.White;
+            this.ModPeli.Image = global::TecnicasProyecto4.Properties.Resources.pagos;
+            this.ModPeli.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.ModPeli.Location = new System.Drawing.Point(9, 92);
+            this.ModPeli.Margin = new System.Windows.Forms.Padding(2);
+            this.ModPeli.Name = "ModPeli";
+            this.ModPeli.Size = new System.Drawing.Size(236, 45);
+            this.ModPeli.TabIndex = 0;
+            this.ModPeli.Text = "MODIFICAR PELICULAS";
+            this.ModPeli.UseVisualStyleBackColor = true;
+            this.ModPeli.Click += new System.EventHandler(this.ModPeli_Click);
             // 
             // btnCatalogo
             // 
@@ -322,6 +381,10 @@
         private System.Windows.Forms.Button btnCS;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button ModPeli;
     }
 }
 
