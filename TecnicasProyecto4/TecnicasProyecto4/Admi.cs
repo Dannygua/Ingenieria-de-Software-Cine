@@ -11,12 +11,12 @@ namespace TecnicasProyecto4
             InitializeComponent();
         }
 
-        public Admi(String text, String tipo)
+        public Admi(String text)
 
         {
             InitializeComponent();
             String Nombre = text;
-            NomUsu.Text = "Welcome " + Nombre + tipo;
+            NomUsu.Text = "Welcome " + Nombre ;
 
         }
         private void Form1_Load(object sender, EventArgs e)
@@ -93,6 +93,11 @@ namespace TecnicasProyecto4
         private void ModPeli_Click(object sender, EventArgs e)
         {
             Abrirform(new ModPelicula());
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

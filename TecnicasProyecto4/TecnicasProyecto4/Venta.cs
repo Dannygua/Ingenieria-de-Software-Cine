@@ -14,14 +14,31 @@ namespace TecnicasProyecto4
     {
         public int Too =1;
 
+        private void Abrirform(object formhija)
+        {
+            if (this.VAsientos.Controls.Count > 0)
+            {
+                this.VAsientos.Controls.RemoveAt(0);
+
+            }
+            Form fh = formhija as Form;
+            fh.TopLevel = false;
+            fh.Dock = DockStyle.Fill;
+            this.VAsientos.Controls.Add(fh);
+            this.VAsientos.Tag = fh;
+            fh.Show();
+        }
+
         public Venta(string text)
         {
 
             InitializeComponent();
             this.funcionTableAdapter.FindCodHo(cineDataSet1.Funcion, Int32.Parse(text));
-            label1.Text = (text);
-
+            lblPelicula.Text =CatalogoCli.PeliToo;
+            label1.Text =text;
             Too = Int32.Parse(text);
+
+
         }
 
         private void funcionBindingNavigatorSaveItem_Click(object sender, EventArgs e)
@@ -77,6 +94,21 @@ namespace TecnicasProyecto4
         private void button2_Click(object sender, EventArgs e)
         {
             this.funcionTableAdapter.FindCodHo(cineDataSet1.Funcion, Too);
+        }
+
+        private void label1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSeleccionFuncion_Click_1(object sender, EventArgs e)
+        {
+            Abrirform(new Asientos(codigoFuTextBox.Text));
+        }
+
+        private void BtnVolver_Click(object sender, EventArgs e)
+        {
+            Visible = false;
         }
     }
 }
