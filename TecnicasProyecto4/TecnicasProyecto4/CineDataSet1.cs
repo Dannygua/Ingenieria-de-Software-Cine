@@ -7,9 +7,12 @@
     }
 }
 
-namespace TecnicasProyecto4.CineDataSet1TableAdapters {
-    
-    
+namespace TecnicasProyecto4.CineDataSet1TableAdapters
+{
+    partial class ComprasTableAdapter
+    {
+    }
+
     public partial class PeliculasTableAdapter {
     }
 }

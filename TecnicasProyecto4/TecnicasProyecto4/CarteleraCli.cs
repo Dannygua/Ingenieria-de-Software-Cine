@@ -9,6 +9,7 @@ namespace TecnicasProyecto4
         {
             InitializeComponent();
             Abrirform(new Inicio());
+            
         }
 
         private void Abrirform(object formhija)

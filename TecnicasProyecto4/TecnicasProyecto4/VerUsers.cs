@@ -19,6 +19,8 @@ namespace TecnicasProyecto4
 
         private void VerUsers_Load(object sender, EventArgs e)
         {
+            // TODO: esta línea de código carga datos en la tabla 'cineDataSet1.Compras' Puede moverla o quitarla según sea necesario.
+            this.comprasTableAdapter.Fill(this.cineDataSet1.Compras);
             // TODO: esta línea de código carga datos en la tabla 'cineDataSet.Usuarios' Puede moverla o quitarla según sea necesario.
             this.usuariosTableAdapter.Fill(this.cineDataSet.Usuarios);
 
