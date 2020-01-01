@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.Label codigoAsLabel;
             System.Windows.Forms.Label descripcionVeLabel;
             System.Windows.Forms.Label fechaVeLabel;
             System.Windows.Forms.Label montoVeLabel;
@@ -74,7 +73,6 @@
             this.asientosTableAdapter = new TecnicasProyecto4.CineDataSet1TableAdapters.AsientosTableAdapter();
             this.tableAdapterManager = new TecnicasProyecto4.CineDataSet1TableAdapters.TableAdapterManager();
             this.comprasTableAdapter = new TecnicasProyecto4.CineDataSet1TableAdapters.ComprasTableAdapter();
-            codigoAsLabel = new System.Windows.Forms.Label();
             descripcionVeLabel = new System.Windows.Forms.Label();
             fechaVeLabel = new System.Windows.Forms.Label();
             montoVeLabel = new System.Windows.Forms.Label();
@@ -96,15 +94,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.AS8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.comprasBindingSource)).BeginInit();
             this.SuspendLayout();
-            // 
-            // codigoAsLabel
-            // 
-            codigoAsLabel.AutoSize = true;
-            codigoAsLabel.Location = new System.Drawing.Point(210, 159);
-            codigoAsLabel.Name = "codigoAsLabel";
-            codigoAsLabel.Size = new System.Drawing.Size(58, 13);
-            codigoAsLabel.TabIndex = 19;
-            codigoAsLabel.Text = "Codigo As:";
             // 
             // descripcionVeLabel
             // 
@@ -429,21 +418,29 @@
             // 
             // codigoAsTextBox
             // 
+            this.codigoAsTextBox.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.codigoAsTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.codigoAsTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.asientosBindingSource, "CodigoAs", true));
-            this.codigoAsTextBox.Location = new System.Drawing.Point(274, 156);
+            this.codigoAsTextBox.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.codigoAsTextBox.Location = new System.Drawing.Point(67, 328);
             this.codigoAsTextBox.Name = "codigoAsTextBox";
-            this.codigoAsTextBox.Size = new System.Drawing.Size(100, 20);
+            this.codigoAsTextBox.Size = new System.Drawing.Size(100, 13);
             this.codigoAsTextBox.TabIndex = 20;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(208, 282);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(50)))), ((int)(((byte)(83)))));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(95)))), ((int)(((byte)(151)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.SystemColors.Control;
+            this.button1.Location = new System.Drawing.Point(208, 313);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(187, 48);
             this.button1.TabIndex = 22;
             this.button1.Text = "COMPROBAR INFORMACION";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnComprar
@@ -456,12 +453,13 @@
             this.btnComprar.ForeColor = System.Drawing.Color.White;
             this.btnComprar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnComprar.Location = new System.Drawing.Point(746, 286);
-            this.btnComprar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnComprar.Margin = new System.Windows.Forms.Padding(2);
             this.btnComprar.Name = "btnComprar";
             this.btnComprar.Size = new System.Drawing.Size(122, 44);
             this.btnComprar.TabIndex = 23;
             this.btnComprar.Text = "COMPRAR";
             this.btnComprar.UseVisualStyleBackColor = false;
+            this.btnComprar.Visible = false;
             this.btnComprar.Click += new System.EventHandler(this.btnComprar_Click);
             // 
             // descripcionVeTextBox
@@ -469,10 +467,11 @@
             this.descripcionVeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.comprasBindingSource, "DescripcionVe", true));
             this.descripcionVeTextBox.Enabled = false;
             this.descripcionVeTextBox.Location = new System.Drawing.Point(763, 106);
-            this.descripcionVeTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.descripcionVeTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.descripcionVeTextBox.Name = "descripcionVeTextBox";
             this.descripcionVeTextBox.Size = new System.Drawing.Size(151, 20);
             this.descripcionVeTextBox.TabIndex = 26;
+            this.descripcionVeTextBox.Visible = false;
             // 
             // comprasBindingSource
             // 
@@ -484,40 +483,44 @@
             this.fechaVeDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.comprasBindingSource, "FechaVe", true));
             this.fechaVeDateTimePicker.Enabled = false;
             this.fechaVeDateTimePicker.Location = new System.Drawing.Point(763, 128);
-            this.fechaVeDateTimePicker.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.fechaVeDateTimePicker.Margin = new System.Windows.Forms.Padding(2);
             this.fechaVeDateTimePicker.Name = "fechaVeDateTimePicker";
             this.fechaVeDateTimePicker.Size = new System.Drawing.Size(151, 20);
             this.fechaVeDateTimePicker.TabIndex = 28;
+            this.fechaVeDateTimePicker.Visible = false;
             // 
             // montoVeTextBox
             // 
             this.montoVeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.comprasBindingSource, "MontoVe", true));
             this.montoVeTextBox.Enabled = false;
             this.montoVeTextBox.Location = new System.Drawing.Point(763, 151);
-            this.montoVeTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.montoVeTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.montoVeTextBox.Name = "montoVeTextBox";
             this.montoVeTextBox.Size = new System.Drawing.Size(151, 20);
             this.montoVeTextBox.TabIndex = 30;
+            this.montoVeTextBox.Visible = false;
             // 
             // nameUseTextBox
             // 
             this.nameUseTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.comprasBindingSource, "NameUse", true));
             this.nameUseTextBox.Enabled = false;
             this.nameUseTextBox.Location = new System.Drawing.Point(763, 174);
-            this.nameUseTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.nameUseTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.nameUseTextBox.Name = "nameUseTextBox";
             this.nameUseTextBox.Size = new System.Drawing.Size(151, 20);
             this.nameUseTextBox.TabIndex = 32;
+            this.nameUseTextBox.Visible = false;
             // 
             // funciOComboTextBox
             // 
             this.funciOComboTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.comprasBindingSource, "FunciOCombo", true));
             this.funciOComboTextBox.Enabled = false;
             this.funciOComboTextBox.Location = new System.Drawing.Point(763, 197);
-            this.funciOComboTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.funciOComboTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.funciOComboTextBox.Name = "funciOComboTextBox";
             this.funciOComboTextBox.Size = new System.Drawing.Size(151, 20);
             this.funciOComboTextBox.TabIndex = 34;
+            this.funciOComboTextBox.Visible = false;
             // 
             // asientosTableAdapter
             // 
@@ -557,7 +560,6 @@
             this.Controls.Add(this.funciOComboTextBox);
             this.Controls.Add(this.btnComprar);
             this.Controls.Add(this.button1);
-            this.Controls.Add(codigoAsLabel);
             this.Controls.Add(this.codigoAsTextBox);
             this.Controls.Add(this.AS10);
             this.Controls.Add(this.AS9);

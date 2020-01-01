@@ -30,9 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.Label Pelicula;
-            System.Windows.Forms.Label codigoFuLabel;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Venta));
             System.Windows.Forms.Label label2;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Venta));
             this.funcionBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.funcionBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -67,7 +66,6 @@
             this.horariosTableAdapter = new TecnicasProyecto4.CineDataSet1TableAdapters.HorariosTableAdapter();
             this.lblPelicula = new System.Windows.Forms.Label();
             Pelicula = new System.Windows.Forms.Label();
-            codigoFuLabel = new System.Windows.Forms.Label();
             label2 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.funcionBindingNavigator)).BeginInit();
             this.funcionBindingNavigator.SuspendLayout();
@@ -88,14 +86,16 @@
             Pelicula.TabIndex = 10;
             Pelicula.Text = "HORARIO:";
             // 
-            // codigoFuLabel
+            // label2
             // 
-            codigoFuLabel.AutoSize = true;
-            codigoFuLabel.Location = new System.Drawing.Point(221, 131);
-            codigoFuLabel.Name = "codigoFuLabel";
-            codigoFuLabel.Size = new System.Drawing.Size(58, 13);
-            codigoFuLabel.TabIndex = 13;
-            codigoFuLabel.Text = "Codigo Fu:";
+            label2.AutoSize = true;
+            label2.Font = new System.Drawing.Font("Copperplate Gothic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label2.ForeColor = System.Drawing.Color.RoyalBlue;
+            label2.Location = new System.Drawing.Point(104, 202);
+            label2.Name = "label2";
+            label2.Size = new System.Drawing.Size(103, 18);
+            label2.TabIndex = 10;
+            label2.Text = "PELICULA:";
             // 
             // funcionBindingNavigator
             // 
@@ -235,11 +235,14 @@
             // 
             // codigoHoTextBox
             // 
+            this.codigoHoTextBox.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.codigoHoTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.codigoHoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.funcionBindingSource, "CodigoHo", true));
             this.codigoHoTextBox.Enabled = false;
+            this.codigoHoTextBox.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.codigoHoTextBox.Location = new System.Drawing.Point(283, 74);
             this.codigoHoTextBox.Name = "codigoHoTextBox";
-            this.codigoHoTextBox.Size = new System.Drawing.Size(100, 20);
+            this.codigoHoTextBox.Size = new System.Drawing.Size(100, 13);
             this.codigoHoTextBox.TabIndex = 2;
             // 
             // findCodHoToolStrip
@@ -292,22 +295,34 @@
             // 
             // btnFHorario
             // 
+            this.btnFHorario.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(50)))), ((int)(((byte)(83)))));
+            this.btnFHorario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnFHorario.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.btnFHorario.FlatAppearance.BorderSize = 0;
+            this.btnFHorario.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(95)))), ((int)(((byte)(151)))));
+            this.btnFHorario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFHorario.ForeColor = System.Drawing.SystemColors.Control;
             this.btnFHorario.Location = new System.Drawing.Point(26, 118);
             this.btnFHorario.Name = "btnFHorario";
             this.btnFHorario.Size = new System.Drawing.Size(133, 38);
             this.btnFHorario.TabIndex = 6;
-            this.btnFHorario.Text = "Funcion Horario";
-            this.btnFHorario.UseVisualStyleBackColor = true;
+            this.btnFHorario.Text = "Buscar Horarios";
+            this.btnFHorario.UseVisualStyleBackColor = false;
             this.btnFHorario.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnFPelicula
             // 
+            this.btnFPelicula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(50)))), ((int)(((byte)(83)))));
+            this.btnFPelicula.FlatAppearance.BorderSize = 0;
+            this.btnFPelicula.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(95)))), ((int)(((byte)(151)))));
+            this.btnFPelicula.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnFPelicula.ForeColor = System.Drawing.SystemColors.Control;
             this.btnFPelicula.Location = new System.Drawing.Point(26, 64);
             this.btnFPelicula.Name = "btnFPelicula";
             this.btnFPelicula.Size = new System.Drawing.Size(133, 39);
             this.btnFPelicula.TabIndex = 7;
-            this.btnFPelicula.Text = "Funcion Pelicula";
-            this.btnFPelicula.UseVisualStyleBackColor = true;
+            this.btnFPelicula.Text = "Buscar Funciones";
+            this.btnFPelicula.UseVisualStyleBackColor = false;
             this.btnFPelicula.Click += new System.EventHandler(this.button2_Click);
             // 
             // label1
@@ -366,10 +381,14 @@
             // 
             // codigoFuTextBox
             // 
+            this.codigoFuTextBox.BackColor = System.Drawing.SystemColors.ControlDark;
+            this.codigoFuTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.codigoFuTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.funcionBindingSource, "CodigoFu", true));
+            this.codigoFuTextBox.Enabled = false;
+            this.codigoFuTextBox.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.codigoFuTextBox.Location = new System.Drawing.Point(285, 128);
             this.codigoFuTextBox.Name = "codigoFuTextBox";
-            this.codigoFuTextBox.Size = new System.Drawing.Size(100, 20);
+            this.codigoFuTextBox.Size = new System.Drawing.Size(100, 13);
             this.codigoFuTextBox.TabIndex = 14;
             // 
             // funcionTableAdapter
@@ -392,17 +411,6 @@
             // 
             this.horariosTableAdapter.ClearBeforeFill = true;
             // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new System.Drawing.Font("Copperplate Gothic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            label2.ForeColor = System.Drawing.Color.RoyalBlue;
-            label2.Location = new System.Drawing.Point(104, 202);
-            label2.Name = "label2";
-            label2.Size = new System.Drawing.Size(103, 18);
-            label2.TabIndex = 10;
-            label2.Text = "PELICULA:";
-            // 
             // lblPelicula
             // 
             this.lblPelicula.AutoSize = true;
@@ -419,7 +427,6 @@
             this.BackColor = System.Drawing.SystemColors.ControlDark;
             this.ClientSize = new System.Drawing.Size(1454, 459);
             this.Controls.Add(this.lblPelicula);
-            this.Controls.Add(codigoFuLabel);
             this.Controls.Add(this.codigoFuTextBox);
             this.Controls.Add(this.BtnVolver);
             this.Controls.Add(this.btnSeleccionFuncion);
