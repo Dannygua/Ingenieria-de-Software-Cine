@@ -15,7 +15,8 @@ namespace TecnicasProyecto4
         public CatalogoCli(string EoP)
         {
             InitializeComponent();
-          
+            
+
             this.peliculasTableAdapter.EoP(cineDataSet1.Peliculas, EoP);
 
            
@@ -91,6 +92,16 @@ namespace TecnicasProyecto4
                 System.Windows.Forms.MessageBox.Show(ex.Message);
             }
 
+        }
+
+        private void bindingNavigatorMoveNextItem_Click(object sender, EventArgs e)
+        {
+            C1.BackgroundImage = Image.FromFile(@"" + imagenPeTextBox.Text);
+        }
+
+        private void bindingNavigatorMovePreviousItem_Click(object sender, EventArgs e)
+        {
+            C1.BackgroundImage = Image.FromFile(@"" + imagenPeTextBox.Text);
         }
     }
 }

@@ -28,13 +28,13 @@ namespace TecnicasProyecto4
         public Asientos(string text)
         {
             InitializeComponent();
-            
 
-            
+
+
             this.asientosTableAdapter.FindAsientoa(cineDataSet1.Asientos, Int32.Parse(text));
             Too = Int32.Parse(text);
-            nameUseTextBox.Text =Cliente.Too;
-            
+            nameUseTextBox.Text = Cliente.Too;
+
         }
 
         private void asientosBindingNavigatorSaveItem_Click(object sender, EventArgs e)
@@ -248,15 +248,20 @@ namespace TecnicasProyecto4
 
         private void button1_Click(object sender, EventArgs e)
         {
+            descripcionVeTextBox.Visible = true;
+            fechaVeDateTimePicker.Visible = true;
+            montoVeTextBox.Visible = true;
+            nameUseTextBox.Visible = true;
+            funciOComboTextBox.Visible = true;
+            btnComprar.Visible = true;
             this.asientosTableAdapter.FindAsientoa(cineDataSet1.Asientos, Too);
             nameUseTextBox.Text = Cliente.Too;
             descripcionVeTextBox.Text = "Venta";
-            funciOComboTextBox.Text ="1";
+            funciOComboTextBox.Text = "1";
             int Asientos1 = Int32.Parse(AsientosC.Text);
             int SumaAsientos = Asientos1 * 6;
-            montoVeTextBox.Text = ""+SumaAsientos;
+            montoVeTextBox.Text = "" + SumaAsientos;
             fechaVeDateTimePicker.Text = DateTime.Now.ToString("dd/MM/yyyy");
-
 
 
         }
@@ -269,7 +274,7 @@ namespace TecnicasProyecto4
         private void btnComprar_Click(object sender, EventArgs e)
         {
             this.comprasTableAdapter.AgregarVenta(descripcionVeTextBox.Text,fechaVeDateTimePicker.Text, Convert.ToDecimal(montoVeTextBox.Text),nameUseTextBox.Text, Int32.Parse(funciOComboTextBox.Text));
-            
+            this.Visible = false;
         }
     }
 }
