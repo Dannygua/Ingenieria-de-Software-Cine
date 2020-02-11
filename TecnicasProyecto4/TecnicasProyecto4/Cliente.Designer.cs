@@ -37,6 +37,7 @@
             this.barrainicio = new System.Windows.Forms.Panel();
             this.button1 = new System.Windows.Forms.Button();
             this.barracontenido = new System.Windows.Forms.Panel();
+            this.NomUsu = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMin)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).BeginInit();
@@ -51,7 +52,7 @@
             this.btnCartelera.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCartelera.ForeColor = System.Drawing.Color.White;
             this.btnCartelera.Location = new System.Drawing.Point(299, 1);
-            this.btnCartelera.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCartelera.Margin = new System.Windows.Forms.Padding(2);
             this.btnCartelera.Name = "btnCartelera";
             this.btnCartelera.Size = new System.Drawing.Size(273, 126);
             this.btnCartelera.TabIndex = 8;
@@ -67,7 +68,7 @@
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.ForeColor = System.Drawing.Color.White;
             this.button7.Location = new System.Drawing.Point(577, 1);
-            this.button7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button7.Margin = new System.Windows.Forms.Padding(2);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(274, 126);
             this.button7.TabIndex = 6;
@@ -81,7 +82,7 @@
             this.btnClose.BackgroundImage = global::TecnicasProyecto4.Properties.Resources.cerrar__1_;
             this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnClose.Location = new System.Drawing.Point(1199, 8);
-            this.btnClose.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnClose.Margin = new System.Windows.Forms.Padding(2);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(20, 21);
             this.btnClose.TabIndex = 13;
@@ -94,7 +95,7 @@
             this.btnMin.BackgroundImage = global::TecnicasProyecto4.Properties.Resources.minimazar;
             this.btnMin.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMin.Location = new System.Drawing.Point(1175, 8);
-            this.btnMin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMin.Margin = new System.Windows.Forms.Padding(2);
             this.btnMin.Name = "btnMin";
             this.btnMin.Size = new System.Drawing.Size(20, 21);
             this.btnMin.TabIndex = 11;
@@ -104,8 +105,8 @@
             // Logo
             // 
             this.Logo.Image = ((System.Drawing.Image)(resources.GetObject("Logo.Image")));
-            this.Logo.Location = new System.Drawing.Point(11, 26);
-            this.Logo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Logo.Location = new System.Drawing.Point(11, 30);
+            this.Logo.Margin = new System.Windows.Forms.Padding(2);
             this.Logo.Name = "Logo";
             this.Logo.Size = new System.Drawing.Size(272, 69);
             this.Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -115,6 +116,7 @@
             // barrainicio
             // 
             this.barrainicio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(50)))), ((int)(((byte)(83)))));
+            this.barrainicio.Controls.Add(this.NomUsu);
             this.barrainicio.Controls.Add(this.Logo);
             this.barrainicio.Controls.Add(this.btnClose);
             this.barrainicio.Controls.Add(this.btnMin);
@@ -123,7 +125,7 @@
             this.barrainicio.Controls.Add(this.button7);
             this.barrainicio.Dock = System.Windows.Forms.DockStyle.Top;
             this.barrainicio.Location = new System.Drawing.Point(0, 0);
-            this.barrainicio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.barrainicio.Margin = new System.Windows.Forms.Padding(2);
             this.barrainicio.Name = "barrainicio";
             this.barrainicio.Size = new System.Drawing.Size(1225, 126);
             this.barrainicio.TabIndex = 16;
@@ -137,7 +139,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.Color.White;
             this.button1.Location = new System.Drawing.Point(1132, 34);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(93, 91);
             this.button1.TabIndex = 4;
@@ -149,10 +151,22 @@
             // 
             this.barracontenido.Dock = System.Windows.Forms.DockStyle.Fill;
             this.barracontenido.Location = new System.Drawing.Point(0, 126);
-            this.barracontenido.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.barracontenido.Margin = new System.Windows.Forms.Padding(2);
             this.barracontenido.Name = "barracontenido";
             this.barracontenido.Size = new System.Drawing.Size(1225, 634);
             this.barracontenido.TabIndex = 17;
+            // 
+            // NomUsu
+            // 
+            this.NomUsu.AutoSize = true;
+            this.NomUsu.Font = new System.Drawing.Font("Lucida Bright", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NomUsu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(95)))), ((int)(((byte)(151)))));
+            this.NomUsu.Location = new System.Drawing.Point(26, 7);
+            this.NomUsu.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.NomUsu.Name = "NomUsu";
+            this.NomUsu.Size = new System.Drawing.Size(51, 16);
+            this.NomUsu.TabIndex = 16;
+            this.NomUsu.Text = "label1";
             // 
             // Cliente
             // 
@@ -162,13 +176,14 @@
             this.Controls.Add(this.barracontenido);
             this.Controls.Add(this.barrainicio);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Cliente";
             this.Text = "Cliente";
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMin)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Logo)).EndInit();
             this.barrainicio.ResumeLayout(false);
+            this.barrainicio.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -182,5 +197,6 @@
         private System.Windows.Forms.PictureBox btnClose;
         private System.Windows.Forms.Panel barracontenido;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label NomUsu;
     }
 }

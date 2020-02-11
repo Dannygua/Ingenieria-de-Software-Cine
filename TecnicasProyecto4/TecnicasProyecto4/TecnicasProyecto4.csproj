@@ -65,6 +65,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Asientos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Asientos.Designer.cs">
+      <DependentUpon>Asientos.cs</DependentUpon>
+    </Compile>
     <Compile Include="CarteleraCli.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +87,19 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>CineDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CineDataSet1.cs">
+      <DependentUpon>CineDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CineDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CineDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CineDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CineDataSet2.xsd</DependentUpon>
     </Compile>
     <Compile Include="Cliente.cs">
       <SubType>Form</SubType>
@@ -118,6 +137,12 @@
     <Compile Include="Inicio.Designer.cs">
       <DependentUpon>Inicio.cs</DependentUpon>
     </Compile>
+    <Compile Include="ModPelicula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModPelicula.Designer.cs">
+      <DependentUpon>ModPelicula.cs</DependentUpon>
+    </Compile>
     <Compile Include="RegistrarAdmi.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -140,6 +165,21 @@
     <Compile Include="Registrar.Designer.cs">
       <DependentUpon>Registrar.cs</DependentUpon>
     </Compile>
+    <Compile Include="Venta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Venta.Designer.cs">
+      <DependentUpon>Venta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="VerUsers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VerUsers.Designer.cs">
+      <DependentUpon>VerUsers.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Asientos.resx">
+      <DependentUpon>Asientos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CarteleraCli.resx">
       <DependentUpon>CarteleraCli.cs</DependentUpon>
     </EmbeddedResource>
@@ -164,6 +204,9 @@
     <EmbeddedResource Include="Inicio.resx">
       <DependentUpon>Inicio.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ModPelicula.resx">
+      <DependentUpon>ModPelicula.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="RegistrarAdmi.resx">
       <DependentUpon>RegistrarAdmi.cs</DependentUpon>
     </EmbeddedResource>
@@ -184,6 +227,12 @@
     <EmbeddedResource Include="Registrar.resx">
       <DependentUpon>Registrar.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Venta.resx">
+      <DependentUpon>Venta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VerUsers.resx">
+      <DependentUpon>VerUsers.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="CineDataSet.xsc">
       <DependentUpon>CineDataSet.xsd</DependentUpon>
     </None>
@@ -194,6 +243,28 @@
     </None>
     <None Include="CineDataSet.xss">
       <DependentUpon>CineDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CineDataSet1.xsc">
+      <DependentUpon>CineDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="CineDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CineDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CineDataSet1.xss">
+      <DependentUpon>CineDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="CineDataSet2.xsc">
+      <DependentUpon>CineDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="CineDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CineDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CineDataSet2.xss">
+      <DependentUpon>CineDataSet2.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -279,6 +350,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="imagenes\canguil.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\asiento.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

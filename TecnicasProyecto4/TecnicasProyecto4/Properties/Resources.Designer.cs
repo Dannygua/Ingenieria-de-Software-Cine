@@ -63,6 +63,16 @@ namespace TecnicasProyecto4.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap asiento {
+            get {
+                object obj = ResourceManager.GetObject("asiento", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap C1 {
             get {
                 object obj = ResourceManager.GetObject("C1", resourceCulture);

@@ -39,6 +39,7 @@ namespace TecnicasProyecto4
                     {
 
                         String texto = dt.Rows[0][0].ToString();
+                        
                         Admi formulario = new Admi(texto);
                         formulario.Visible = true;
                         Visible = false;
@@ -51,7 +52,7 @@ namespace TecnicasProyecto4
                     {
 
                         String texto = dt.Rows[0][0].ToString();
-                        Cliente formulario = new Cliente();
+                        Cliente formulario = new Cliente(texto);
                         formulario.Visible = true;
                         Visible = false;
 

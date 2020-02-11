@@ -9,6 +9,7 @@ namespace TecnicasProyecto4
         {
             InitializeComponent();
             Abrirform(new Inicio());
+            
         }
 
         private void Abrirform(object formhija)
@@ -28,17 +29,22 @@ namespace TecnicasProyecto4
 
         private void btnCatalogo_Click(object sender, EventArgs e)
         {
-            Abrirform(new CatalogoCli("C"));
+            Abrirform(new CatalogoCli("Estreno"));
         }
 
         private void PEstrenos_Click(object sender, EventArgs e)
         {
-            Abrirform(new CatalogoCli("PE"));
+            Abrirform(new CatalogoCli("Proximo Estreno"));
         }
 
         private void btnInicio_Click(object sender, EventArgs e)
         {
             Abrirform(new Inicio());
+        }
+
+        private void btnCombrar_Click(object sender, EventArgs e)
+        {
+            Abrirform(new Compra());
         }
     }
 }

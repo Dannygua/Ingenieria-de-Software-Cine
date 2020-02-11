@@ -44,7 +44,7 @@
             this.barramenu.Controls.Add(this.btnCatalogo);
             this.barramenu.Dock = System.Windows.Forms.DockStyle.Left;
             this.barramenu.Location = new System.Drawing.Point(0, 0);
-            this.barramenu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.barramenu.Margin = new System.Windows.Forms.Padding(2);
             this.barramenu.Name = "barramenu";
             this.barramenu.Size = new System.Drawing.Size(244, 634);
             this.barramenu.TabIndex = 0;
@@ -57,7 +57,7 @@
             this.btnInicio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnInicio.ForeColor = System.Drawing.Color.White;
             this.btnInicio.Location = new System.Drawing.Point(2, 41);
-            this.btnInicio.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnInicio.Margin = new System.Windows.Forms.Padding(2);
             this.btnInicio.Name = "btnInicio";
             this.btnInicio.Size = new System.Drawing.Size(242, 53);
             this.btnInicio.TabIndex = 5;
@@ -72,7 +72,7 @@
             this.PEstrenos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.PEstrenos.ForeColor = System.Drawing.Color.White;
             this.PEstrenos.Location = new System.Drawing.Point(2, 154);
-            this.PEstrenos.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.PEstrenos.Margin = new System.Windows.Forms.Padding(2);
             this.PEstrenos.Name = "PEstrenos";
             this.PEstrenos.Size = new System.Drawing.Size(242, 53);
             this.PEstrenos.TabIndex = 2;
@@ -88,7 +88,7 @@
             this.btnCatalogo.ForeColor = System.Drawing.Color.White;
             this.btnCatalogo.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnCatalogo.Location = new System.Drawing.Point(2, 98);
-            this.btnCatalogo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCatalogo.Margin = new System.Windows.Forms.Padding(2);
             this.btnCatalogo.Name = "btnCatalogo";
             this.btnCatalogo.Size = new System.Drawing.Size(242, 53);
             this.btnCatalogo.TabIndex = 4;
@@ -99,9 +99,8 @@
             // barracontenido
             // 
             this.barracontenido.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.barracontenido.Dock = System.Windows.Forms.DockStyle.Fill;
             this.barracontenido.Location = new System.Drawing.Point(244, 0);
-            this.barracontenido.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.barracontenido.Margin = new System.Windows.Forms.Padding(2);
             this.barracontenido.Name = "barracontenido";
             this.barracontenido.Size = new System.Drawing.Size(981, 634);
             this.barracontenido.TabIndex = 1;
@@ -114,7 +113,7 @@
             this.Controls.Add(this.barracontenido);
             this.Controls.Add(this.barramenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "CarteleraCli";
             this.Text = "CarteleraCli";
             this.barramenu.ResumeLayout(false);

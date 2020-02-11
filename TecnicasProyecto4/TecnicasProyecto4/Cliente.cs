@@ -6,10 +6,15 @@ namespace TecnicasProyecto4
 {
     public partial class Cliente : Form
     {
-        public Cliente()
+        static public String Too = "";
+        public Cliente(string text)
         {
             InitializeComponent();
+            Too = text;
+            NomUsu.Text = "Welcome " + Too;
             Abrirform(new Inicio());
+            
+
         }
 
 
