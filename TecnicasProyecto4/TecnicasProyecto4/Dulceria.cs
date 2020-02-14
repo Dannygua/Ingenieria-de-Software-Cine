@@ -62,5 +62,10 @@ namespace TecnicasProyecto4
         {
 
         }
+
+        private void combosBindingNavigator_RefreshItems(object sender, EventArgs e)
+        {
+
+        }
     }
 }

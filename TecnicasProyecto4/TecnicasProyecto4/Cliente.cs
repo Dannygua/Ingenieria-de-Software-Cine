@@ -12,7 +12,6 @@ namespace TecnicasProyecto4
             InitializeComponent();
             Too = text;
             NomUsu.Text = "Welcome " + Too;
-            Abrirform(new Inicio());
             
 
         }
@@ -72,6 +71,14 @@ namespace TecnicasProyecto4
             Visible = false;
         }
 
+        private void barrainicio_Paint(object sender, PaintEventArgs e)
+        {
 
+        }
+
+        private void btnComentarios_Click(object sender, EventArgs e)
+        {
+            Abrirform(new comentarios());
+        }
     }
 }

@@ -47,10 +47,11 @@
             this.tableAdapterManager = new TecnicasProyecto4.CineDataSet1TableAdapters.TableAdapterManager();
             this.combosBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
+            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
+            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.nombreCoTextBox = new System.Windows.Forms.TextBox();
             this.precioCoTextBox = new System.Windows.Forms.TextBox();
             this.contenidoCoTextBox = new System.Windows.Forms.TextBox();
@@ -66,14 +67,8 @@
             this.Cantidad = new System.Windows.Forms.TextBox();
             this.btnSeleccionarCombo = new System.Windows.Forms.Button();
             this.comprasTableAdapter = new TecnicasProyecto4.CineDataSet1TableAdapters.ComprasTableAdapter();
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
-            this.combosBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.asientosTableAdapter1 = new TecnicasProyecto4.CineDataSet2TableAdapters.AsientosTableAdapter();
             codigoVeLabel = new System.Windows.Forms.Label();
             descripcionVeLabel = new System.Windows.Forms.Label();
             fechaVeLabel = new System.Windows.Forms.Label();
@@ -237,34 +232,29 @@
             // 
             // combosBindingNavigator
             // 
-            this.combosBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
+            this.combosBindingNavigator.AddNewItem = null;
             this.combosBindingNavigator.BindingSource = this.combosBindingSource;
             this.combosBindingNavigator.CountItem = this.bindingNavigatorCountItem;
-            this.combosBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
+            this.combosBindingNavigator.DeleteItem = null;
             this.combosBindingNavigator.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.combosBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.bindingNavigatorMoveFirstItem,
             this.bindingNavigatorMovePreviousItem,
             this.bindingNavigatorSeparator,
             this.bindingNavigatorPositionItem,
             this.bindingNavigatorCountItem,
             this.bindingNavigatorSeparator1,
-            this.bindingNavigatorMoveNextItem,
-            this.bindingNavigatorMoveLastItem,
-            this.bindingNavigatorSeparator2,
-            this.bindingNavigatorAddNewItem,
-            this.bindingNavigatorDeleteItem,
-            this.combosBindingNavigatorSaveItem});
+            this.bindingNavigatorMoveNextItem});
             this.combosBindingNavigator.Location = new System.Drawing.Point(0, 0);
-            this.combosBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
-            this.combosBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
+            this.combosBindingNavigator.MoveFirstItem = null;
+            this.combosBindingNavigator.MoveLastItem = null;
             this.combosBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
             this.combosBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.combosBindingNavigator.Name = "combosBindingNavigator";
             this.combosBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.combosBindingNavigator.Size = new System.Drawing.Size(1205, 27);
+            this.combosBindingNavigator.Size = new System.Drawing.Size(1167, 27);
             this.combosBindingNavigator.TabIndex = 0;
             this.combosBindingNavigator.Text = "bindingNavigator1";
+            this.combosBindingNavigator.RefreshItems += new System.EventHandler(this.combosBindingNavigator_RefreshItems);
             // 
             // bindingNavigatorCountItem
             // 
@@ -272,6 +262,15 @@
             this.bindingNavigatorCountItem.Size = new System.Drawing.Size(37, 24);
             this.bindingNavigatorCountItem.Text = "de {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Número total de elementos";
+            // 
+            // bindingNavigatorMovePreviousItem
+            // 
+            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
+            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
+            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(24, 24);
+            this.bindingNavigatorMovePreviousItem.Text = "Mover anterior";
             // 
             // bindingNavigatorSeparator
             // 
@@ -292,10 +291,14 @@
             this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
             this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 27);
             // 
-            // bindingNavigatorSeparator2
+            // bindingNavigatorMoveNextItem
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
+            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
+            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
+            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
+            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(24, 24);
+            this.bindingNavigatorMoveNextItem.Text = "Mover siguiente";
             // 
             // nombreCoTextBox
             // 
@@ -352,7 +355,7 @@
             this.Descripcion.Controls.Add(this.funciOComboTextBox);
             this.Descripcion.Controls.Add(this.btnCompra);
             this.Descripcion.Dock = System.Windows.Forms.DockStyle.Right;
-            this.Descripcion.Location = new System.Drawing.Point(892, 27);
+            this.Descripcion.Location = new System.Drawing.Point(854, 27);
             this.Descripcion.Name = "Descripcion";
             this.Descripcion.Size = new System.Drawing.Size(313, 607);
             this.Descripcion.TabIndex = 14;
@@ -467,69 +470,6 @@
             // 
             this.comprasTableAdapter.ClearBeforeFill = true;
             // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(24, 24);
-            this.bindingNavigatorAddNewItem.Text = "Agregar nuevo";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(24, 24);
-            this.bindingNavigatorDeleteItem.Text = "Eliminar";
-            // 
-            // bindingNavigatorMoveFirstItem
-            // 
-            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
-            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
-            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(24, 24);
-            this.bindingNavigatorMoveFirstItem.Text = "Mover primero";
-            // 
-            // bindingNavigatorMovePreviousItem
-            // 
-            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
-            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
-            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(24, 24);
-            this.bindingNavigatorMovePreviousItem.Text = "Mover anterior";
-            // 
-            // bindingNavigatorMoveNextItem
-            // 
-            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
-            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
-            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(24, 24);
-            this.bindingNavigatorMoveNextItem.Text = "Mover siguiente";
-            // 
-            // bindingNavigatorMoveLastItem
-            // 
-            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
-            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
-            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(24, 24);
-            this.bindingNavigatorMoveLastItem.Text = "Mover último";
-            // 
-            // combosBindingNavigatorSaveItem
-            // 
-            this.combosBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.combosBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("combosBindingNavigatorSaveItem.Image")));
-            this.combosBindingNavigatorSaveItem.Name = "combosBindingNavigatorSaveItem";
-            this.combosBindingNavigatorSaveItem.Size = new System.Drawing.Size(24, 24);
-            this.combosBindingNavigatorSaveItem.Text = "Guardar datos";
-            this.combosBindingNavigatorSaveItem.Click += new System.EventHandler(this.combosBindingNavigatorSaveItem_Click);
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -541,13 +481,17 @@
             this.pictureBox1.TabIndex = 17;
             this.pictureBox1.TabStop = false;
             // 
+            // asientosTableAdapter1
+            // 
+            this.asientosTableAdapter1.ClearBeforeFill = true;
+            // 
             // Dulceria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1205, 634);
+            this.ClientSize = new System.Drawing.Size(1167, 634);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(label1);
             this.Controls.Add(label2);
@@ -586,18 +530,12 @@
         private CineDataSet1TableAdapters.CombosTableAdapter combosTableAdapter;
         private CineDataSet1TableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.BindingNavigator combosBindingNavigator;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMovePreviousItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator;
         private System.Windows.Forms.ToolStripTextBox bindingNavigatorPositionItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator1;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
-        private System.Windows.Forms.ToolStripButton combosBindingNavigatorSaveItem;
         private System.Windows.Forms.TextBox nombreCoTextBox;
         private System.Windows.Forms.TextBox precioCoTextBox;
         private System.Windows.Forms.TextBox contenidoCoTextBox;
@@ -614,5 +552,6 @@
         private System.Windows.Forms.TextBox nameUseTextBox;
         private System.Windows.Forms.TextBox funciOComboTextBox;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private CineDataSet2TableAdapters.AsientosTableAdapter asientosTableAdapter1;
     }
 }

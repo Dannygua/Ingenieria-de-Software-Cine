@@ -107,6 +107,12 @@
     <Compile Include="Cliente.Designer.cs">
       <DependentUpon>Cliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="comentarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="comentarios.Designer.cs">
+      <DependentUpon>comentarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="Compra.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -177,6 +183,12 @@
     <Compile Include="VerUsers.Designer.cs">
       <DependentUpon>VerUsers.cs</DependentUpon>
     </Compile>
+    <Compile Include="VerUsuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="VerUsuarios.Designer.cs">
+      <DependentUpon>VerUsuarios.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Asientos.resx">
       <DependentUpon>Asientos.cs</DependentUpon>
     </EmbeddedResource>
@@ -188,6 +200,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Cliente.resx">
       <DependentUpon>Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="comentarios.resx">
+      <DependentUpon>comentarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Compra.resx">
       <DependentUpon>Compra.cs</DependentUpon>
@@ -232,6 +247,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="VerUsers.resx">
       <DependentUpon>VerUsers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="VerUsuarios.resx">
+      <DependentUpon>VerUsuarios.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="CineDataSet.xsc">
       <DependentUpon>CineDataSet.xsd</DependentUpon>
@@ -356,6 +374,12 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="imagenes\popc.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\users.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="imagenes\Ventas.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

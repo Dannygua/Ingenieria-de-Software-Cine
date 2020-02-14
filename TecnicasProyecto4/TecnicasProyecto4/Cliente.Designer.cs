@@ -31,17 +31,20 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Cliente));
             this.btnCartelera = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
-            this.btnClose = new System.Windows.Forms.PictureBox();
-            this.btnMin = new System.Windows.Forms.PictureBox();
-            this.Logo = new System.Windows.Forms.PictureBox();
             this.barrainicio = new System.Windows.Forms.Panel();
+            this.NomUsu = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.barracontenido = new System.Windows.Forms.Panel();
-            this.NomUsu = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.Logo = new System.Windows.Forms.PictureBox();
+            this.btnClose = new System.Windows.Forms.PictureBox();
+            this.btnMin = new System.Windows.Forms.PictureBox();
+            this.barrainicio.SuspendLayout();
+            this.barracontenido.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Logo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMin)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Logo)).BeginInit();
-            this.barrainicio.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnCartelera
@@ -76,6 +79,85 @@
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
+            // barrainicio
+            // 
+            this.barrainicio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(50)))), ((int)(((byte)(83)))));
+            this.barrainicio.Controls.Add(this.NomUsu);
+            this.barrainicio.Controls.Add(this.Logo);
+            this.barrainicio.Controls.Add(this.btnClose);
+            this.barrainicio.Controls.Add(this.btnMin);
+            this.barrainicio.Controls.Add(this.btnCartelera);
+            this.barrainicio.Controls.Add(this.button1);
+            this.barrainicio.Controls.Add(this.button7);
+            this.barrainicio.Dock = System.Windows.Forms.DockStyle.Top;
+            this.barrainicio.Location = new System.Drawing.Point(0, 0);
+            this.barrainicio.Margin = new System.Windows.Forms.Padding(2);
+            this.barrainicio.Name = "barrainicio";
+            this.barrainicio.Size = new System.Drawing.Size(1225, 126);
+            this.barrainicio.TabIndex = 16;
+            this.barrainicio.Paint += new System.Windows.Forms.PaintEventHandler(this.barrainicio_Paint);
+            this.barrainicio.MouseDown += new System.Windows.Forms.MouseEventHandler(this.barrainicio_MouseDown);
+            // 
+            // NomUsu
+            // 
+            this.NomUsu.AutoSize = true;
+            this.NomUsu.Font = new System.Drawing.Font("Lucida Bright", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NomUsu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(95)))), ((int)(((byte)(151)))));
+            this.NomUsu.Location = new System.Drawing.Point(26, 7);
+            this.NomUsu.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.NomUsu.Name = "NomUsu";
+            this.NomUsu.Size = new System.Drawing.Size(51, 16);
+            this.NomUsu.TabIndex = 16;
+            this.NomUsu.Text = "label1";
+            // 
+            // button1
+            // 
+            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(95)))), ((int)(((byte)(151)))));
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.Location = new System.Drawing.Point(1132, 34);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(93, 91);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "CERRAR SESION";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // barracontenido
+            // 
+            this.barracontenido.Controls.Add(this.pictureBox1);
+            this.barracontenido.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.barracontenido.Location = new System.Drawing.Point(0, 126);
+            this.barracontenido.Margin = new System.Windows.Forms.Padding(2);
+            this.barracontenido.Name = "barracontenido";
+            this.barracontenido.Size = new System.Drawing.Size(1225, 634);
+            this.barracontenido.TabIndex = 17;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1225, 634);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 18;
+            this.pictureBox1.TabStop = false;
+            // 
+            // Logo
+            // 
+            this.Logo.Image = ((System.Drawing.Image)(resources.GetObject("Logo.Image")));
+            this.Logo.Location = new System.Drawing.Point(11, 30);
+            this.Logo.Margin = new System.Windows.Forms.Padding(2);
+            this.Logo.Name = "Logo";
+            this.Logo.Size = new System.Drawing.Size(272, 69);
+            this.Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Logo.TabIndex = 15;
+            this.Logo.TabStop = false;
+            // 
             // btnClose
             // 
             this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -102,72 +184,6 @@
             this.btnMin.TabStop = false;
             this.btnMin.Click += new System.EventHandler(this.btnMin_Click);
             // 
-            // Logo
-            // 
-            this.Logo.Image = ((System.Drawing.Image)(resources.GetObject("Logo.Image")));
-            this.Logo.Location = new System.Drawing.Point(11, 30);
-            this.Logo.Margin = new System.Windows.Forms.Padding(2);
-            this.Logo.Name = "Logo";
-            this.Logo.Size = new System.Drawing.Size(272, 69);
-            this.Logo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.Logo.TabIndex = 15;
-            this.Logo.TabStop = false;
-            // 
-            // barrainicio
-            // 
-            this.barrainicio.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(50)))), ((int)(((byte)(83)))));
-            this.barrainicio.Controls.Add(this.NomUsu);
-            this.barrainicio.Controls.Add(this.Logo);
-            this.barrainicio.Controls.Add(this.btnClose);
-            this.barrainicio.Controls.Add(this.btnMin);
-            this.barrainicio.Controls.Add(this.btnCartelera);
-            this.barrainicio.Controls.Add(this.button1);
-            this.barrainicio.Controls.Add(this.button7);
-            this.barrainicio.Dock = System.Windows.Forms.DockStyle.Top;
-            this.barrainicio.Location = new System.Drawing.Point(0, 0);
-            this.barrainicio.Margin = new System.Windows.Forms.Padding(2);
-            this.barrainicio.Name = "barrainicio";
-            this.barrainicio.Size = new System.Drawing.Size(1225, 126);
-            this.barrainicio.TabIndex = 16;
-            this.barrainicio.MouseDown += new System.Windows.Forms.MouseEventHandler(this.barrainicio_MouseDown);
-            // 
-            // button1
-            // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(95)))), ((int)(((byte)(151)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(1132, 34);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(93, 91);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "CERRAR SESION";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // barracontenido
-            // 
-            this.barracontenido.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.barracontenido.Location = new System.Drawing.Point(0, 126);
-            this.barracontenido.Margin = new System.Windows.Forms.Padding(2);
-            this.barracontenido.Name = "barracontenido";
-            this.barracontenido.Size = new System.Drawing.Size(1225, 634);
-            this.barracontenido.TabIndex = 17;
-            // 
-            // NomUsu
-            // 
-            this.NomUsu.AutoSize = true;
-            this.NomUsu.Font = new System.Drawing.Font("Lucida Bright", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.NomUsu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(95)))), ((int)(((byte)(151)))));
-            this.NomUsu.Location = new System.Drawing.Point(26, 7);
-            this.NomUsu.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.NomUsu.Name = "NomUsu";
-            this.NomUsu.Size = new System.Drawing.Size(51, 16);
-            this.NomUsu.TabIndex = 16;
-            this.NomUsu.Text = "label1";
-            // 
             // Cliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -179,11 +195,13 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Cliente";
             this.Text = "Cliente";
-            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnMin)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.Logo)).EndInit();
             this.barrainicio.ResumeLayout(false);
             this.barrainicio.PerformLayout();
+            this.barracontenido.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Logo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnClose)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.btnMin)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -198,5 +216,6 @@
         private System.Windows.Forms.Panel barracontenido;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label NomUsu;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

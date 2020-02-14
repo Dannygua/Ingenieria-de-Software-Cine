@@ -49,3 +49,5 @@ C:\Users\Kirineko\Desktop\clonCine\Ingenieria-de-Software-Cine\TecnicasProyecto4
 C:\Users\Kirineko\Desktop\clonCine\Ingenieria-de-Software-Cine\TecnicasProyecto4\TecnicasProyecto4\obj\Debug\TecnicasProyecto4.exe
 C:\Users\Kirineko\Desktop\clonCine\Ingenieria-de-Software-Cine\TecnicasProyecto4\TecnicasProyecto4\obj\Debug\TecnicasProyecto4.pdb
 C:\Users\Kirineko\Desktop\clonCine\Ingenieria-de-Software-Cine\TecnicasProyecto4\TecnicasProyecto4\obj\Debug\TecnicasProyecto4.Asientos.resources
+C:\Users\Kirineko\Desktop\clonCine\Ingenieria-de-Software-Cine\TecnicasProyecto4\TecnicasProyecto4\obj\Debug\TecnicasProyecto4.VerUsuarios.resources
+C:\Users\Kirineko\Desktop\clonCine\Ingenieria-de-Software-Cine\TecnicasProyecto4\TecnicasProyecto4\obj\Debug\TecnicasProyecto4.comentarios.resources

@@ -34,22 +34,8 @@
             System.Windows.Forms.Label montoVeLabel;
             System.Windows.Forms.Label nameUseLabel;
             System.Windows.Forms.Label funciOComboLabel;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Asientos));
-            this.asientosBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.asientosBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cineDataSet1 = new TecnicasProyecto4.CineDataSet1();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.asientosBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.AS7 = new System.Windows.Forms.PictureBox();
             this.AS6 = new System.Windows.Forms.PictureBox();
             this.AS5 = new System.Windows.Forms.PictureBox();
@@ -73,13 +59,51 @@
             this.asientosTableAdapter = new TecnicasProyecto4.CineDataSet1TableAdapters.AsientosTableAdapter();
             this.tableAdapterManager = new TecnicasProyecto4.CineDataSet1TableAdapters.TableAdapterManager();
             this.comprasTableAdapter = new TecnicasProyecto4.CineDataSet1TableAdapters.ComprasTableAdapter();
+            this.AS20 = new System.Windows.Forms.PictureBox();
+            this.AS19 = new System.Windows.Forms.PictureBox();
+            this.AS18 = new System.Windows.Forms.PictureBox();
+            this.AS17 = new System.Windows.Forms.PictureBox();
+            this.AS16 = new System.Windows.Forms.PictureBox();
+            this.AS15 = new System.Windows.Forms.PictureBox();
+            this.AS14 = new System.Windows.Forms.PictureBox();
+            this.AS13 = new System.Windows.Forms.PictureBox();
+            this.AS12 = new System.Windows.Forms.PictureBox();
+            this.AS11 = new System.Windows.Forms.PictureBox();
+            this.AS30 = new System.Windows.Forms.PictureBox();
+            this.AS29 = new System.Windows.Forms.PictureBox();
+            this.AS28 = new System.Windows.Forms.PictureBox();
+            this.AS27 = new System.Windows.Forms.PictureBox();
+            this.AS26 = new System.Windows.Forms.PictureBox();
+            this.AS25 = new System.Windows.Forms.PictureBox();
+            this.AS24 = new System.Windows.Forms.PictureBox();
+            this.AS23 = new System.Windows.Forms.PictureBox();
+            this.AS22 = new System.Windows.Forms.PictureBox();
+            this.AS21 = new System.Windows.Forms.PictureBox();
+            this.AS50 = new System.Windows.Forms.PictureBox();
+            this.AS49 = new System.Windows.Forms.PictureBox();
+            this.AS48 = new System.Windows.Forms.PictureBox();
+            this.AS47 = new System.Windows.Forms.PictureBox();
+            this.AS46 = new System.Windows.Forms.PictureBox();
+            this.AS45 = new System.Windows.Forms.PictureBox();
+            this.AS44 = new System.Windows.Forms.PictureBox();
+            this.AS43 = new System.Windows.Forms.PictureBox();
+            this.AS42 = new System.Windows.Forms.PictureBox();
+            this.AS41 = new System.Windows.Forms.PictureBox();
+            this.AS40 = new System.Windows.Forms.PictureBox();
+            this.AS39 = new System.Windows.Forms.PictureBox();
+            this.AS38 = new System.Windows.Forms.PictureBox();
+            this.AS37 = new System.Windows.Forms.PictureBox();
+            this.AS36 = new System.Windows.Forms.PictureBox();
+            this.AS35 = new System.Windows.Forms.PictureBox();
+            this.AS34 = new System.Windows.Forms.PictureBox();
+            this.AS33 = new System.Windows.Forms.PictureBox();
+            this.AS32 = new System.Windows.Forms.PictureBox();
+            this.AS31 = new System.Windows.Forms.PictureBox();
             descripcionVeLabel = new System.Windows.Forms.Label();
             fechaVeLabel = new System.Windows.Forms.Label();
             montoVeLabel = new System.Windows.Forms.Label();
             nameUseLabel = new System.Windows.Forms.Label();
             funciOComboLabel = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.asientosBindingNavigator)).BeginInit();
-            this.asientosBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.asientosBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cineDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AS7)).BeginInit();
@@ -93,6 +117,46 @@
             ((System.ComponentModel.ISupportInitialize)(this.AS9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AS8)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.comprasBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS20)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS19)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS18)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS17)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS15)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS14)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS13)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS11)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS30)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS29)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS28)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS27)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS26)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS25)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS24)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS23)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS22)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS50)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS49)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS48)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS47)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS46)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS45)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS44)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS43)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS42)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS41)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS40)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS39)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS38)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS37)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS36)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS35)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS34)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS33)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS32)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS31)).BeginInit();
             this.SuspendLayout();
             // 
             // descripcionVeLabel
@@ -147,47 +211,6 @@
             funciOComboLabel.TabIndex = 33;
             funciOComboLabel.Text = "Funci OCombo:";
             // 
-            // asientosBindingNavigator
-            // 
-            this.asientosBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
-            this.asientosBindingNavigator.BindingSource = this.asientosBindingSource;
-            this.asientosBindingNavigator.CountItem = this.bindingNavigatorCountItem;
-            this.asientosBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
-            this.asientosBindingNavigator.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.asientosBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.bindingNavigatorMoveFirstItem,
-            this.bindingNavigatorMovePreviousItem,
-            this.bindingNavigatorSeparator,
-            this.bindingNavigatorPositionItem,
-            this.bindingNavigatorCountItem,
-            this.bindingNavigatorSeparator1,
-            this.bindingNavigatorMoveNextItem,
-            this.bindingNavigatorMoveLastItem,
-            this.bindingNavigatorSeparator2,
-            this.bindingNavigatorAddNewItem,
-            this.bindingNavigatorDeleteItem,
-            this.asientosBindingNavigatorSaveItem});
-            this.asientosBindingNavigator.Location = new System.Drawing.Point(0, 0);
-            this.asientosBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
-            this.asientosBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
-            this.asientosBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
-            this.asientosBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
-            this.asientosBindingNavigator.Name = "asientosBindingNavigator";
-            this.asientosBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.asientosBindingNavigator.Size = new System.Drawing.Size(984, 27);
-            this.asientosBindingNavigator.TabIndex = 0;
-            this.asientosBindingNavigator.Text = "bindingNavigator1";
-            this.asientosBindingNavigator.RefreshItems += new System.EventHandler(this.asientosBindingNavigator_RefreshItems);
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(24, 24);
-            this.bindingNavigatorAddNewItem.Text = "Agregar nuevo";
-            // 
             // asientosBindingSource
             // 
             this.asientosBindingSource.DataMember = "Asientos";
@@ -197,91 +220,6 @@
             // 
             this.cineDataSet1.DataSetName = "CineDataSet1";
             this.cineDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(37, 24);
-            this.bindingNavigatorCountItem.Text = "de {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Número total de elementos";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(24, 24);
-            this.bindingNavigatorDeleteItem.Text = "Eliminar";
-            // 
-            // bindingNavigatorMoveFirstItem
-            // 
-            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
-            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
-            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(24, 24);
-            this.bindingNavigatorMoveFirstItem.Text = "Mover primero";
-            // 
-            // bindingNavigatorMovePreviousItem
-            // 
-            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
-            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
-            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(24, 24);
-            this.bindingNavigatorMovePreviousItem.Text = "Mover anterior";
-            // 
-            // bindingNavigatorSeparator
-            // 
-            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 27);
-            // 
-            // bindingNavigatorPositionItem
-            // 
-            this.bindingNavigatorPositionItem.AccessibleName = "Posición";
-            this.bindingNavigatorPositionItem.AutoSize = false;
-            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
-            this.bindingNavigatorPositionItem.Text = "0";
-            this.bindingNavigatorPositionItem.ToolTipText = "Posición actual";
-            // 
-            // bindingNavigatorSeparator1
-            // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 27);
-            // 
-            // bindingNavigatorMoveNextItem
-            // 
-            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
-            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
-            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(24, 24);
-            this.bindingNavigatorMoveNextItem.Text = "Mover siguiente";
-            // 
-            // bindingNavigatorMoveLastItem
-            // 
-            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
-            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
-            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(24, 24);
-            this.bindingNavigatorMoveLastItem.Text = "Mover último";
-            // 
-            // bindingNavigatorSeparator2
-            // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
-            // 
-            // asientosBindingNavigatorSaveItem
-            // 
-            this.asientosBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.asientosBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("asientosBindingNavigatorSaveItem.Image")));
-            this.asientosBindingNavigatorSaveItem.Name = "asientosBindingNavigatorSaveItem";
-            this.asientosBindingNavigatorSaveItem.Size = new System.Drawing.Size(24, 24);
-            this.asientosBindingNavigatorSaveItem.Text = "Guardar datos";
-            this.asientosBindingNavigatorSaveItem.Click += new System.EventHandler(this.asientosBindingNavigatorSaveItem_Click);
             // 
             // AS7
             // 
@@ -373,7 +311,7 @@
             this.AsientosC.BackColor = System.Drawing.Color.Black;
             this.AsientosC.Font = new System.Drawing.Font("Bodoni MT Condensed", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.AsientosC.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.AsientosC.Location = new System.Drawing.Point(63, 180);
+            this.AsientosC.Location = new System.Drawing.Point(35, 313);
             this.AsientosC.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.AsientosC.Name = "AsientosC";
             this.AsientosC.Size = new System.Drawing.Size(47, 22);
@@ -435,7 +373,7 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.ForeColor = System.Drawing.SystemColors.Control;
             this.button1.Location = new System.Drawing.Point(208, 313);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(187, 48);
             this.button1.TabIndex = 22;
@@ -453,7 +391,7 @@
             this.btnComprar.ForeColor = System.Drawing.Color.White;
             this.btnComprar.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnComprar.Location = new System.Drawing.Point(746, 286);
-            this.btnComprar.Margin = new System.Windows.Forms.Padding(2);
+            this.btnComprar.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnComprar.Name = "btnComprar";
             this.btnComprar.Size = new System.Drawing.Size(122, 44);
             this.btnComprar.TabIndex = 23;
@@ -467,7 +405,7 @@
             this.descripcionVeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.comprasBindingSource, "DescripcionVe", true));
             this.descripcionVeTextBox.Enabled = false;
             this.descripcionVeTextBox.Location = new System.Drawing.Point(763, 106);
-            this.descripcionVeTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.descripcionVeTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.descripcionVeTextBox.Name = "descripcionVeTextBox";
             this.descripcionVeTextBox.Size = new System.Drawing.Size(151, 20);
             this.descripcionVeTextBox.TabIndex = 26;
@@ -483,7 +421,7 @@
             this.fechaVeDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.comprasBindingSource, "FechaVe", true));
             this.fechaVeDateTimePicker.Enabled = false;
             this.fechaVeDateTimePicker.Location = new System.Drawing.Point(763, 128);
-            this.fechaVeDateTimePicker.Margin = new System.Windows.Forms.Padding(2);
+            this.fechaVeDateTimePicker.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.fechaVeDateTimePicker.Name = "fechaVeDateTimePicker";
             this.fechaVeDateTimePicker.Size = new System.Drawing.Size(151, 20);
             this.fechaVeDateTimePicker.TabIndex = 28;
@@ -494,7 +432,7 @@
             this.montoVeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.comprasBindingSource, "MontoVe", true));
             this.montoVeTextBox.Enabled = false;
             this.montoVeTextBox.Location = new System.Drawing.Point(763, 151);
-            this.montoVeTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.montoVeTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.montoVeTextBox.Name = "montoVeTextBox";
             this.montoVeTextBox.Size = new System.Drawing.Size(151, 20);
             this.montoVeTextBox.TabIndex = 30;
@@ -505,7 +443,7 @@
             this.nameUseTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.comprasBindingSource, "NameUse", true));
             this.nameUseTextBox.Enabled = false;
             this.nameUseTextBox.Location = new System.Drawing.Point(763, 174);
-            this.nameUseTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.nameUseTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.nameUseTextBox.Name = "nameUseTextBox";
             this.nameUseTextBox.Size = new System.Drawing.Size(151, 20);
             this.nameUseTextBox.TabIndex = 32;
@@ -516,7 +454,7 @@
             this.funciOComboTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.comprasBindingSource, "FunciOCombo", true));
             this.funciOComboTextBox.Enabled = false;
             this.funciOComboTextBox.Location = new System.Drawing.Point(763, 197);
-            this.funciOComboTextBox.Margin = new System.Windows.Forms.Padding(2);
+            this.funciOComboTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.funciOComboTextBox.Name = "funciOComboTextBox";
             this.funciOComboTextBox.Size = new System.Drawing.Size(151, 20);
             this.funciOComboTextBox.TabIndex = 34;
@@ -542,12 +480,494 @@
             // 
             this.comprasTableAdapter.ClearBeforeFill = true;
             // 
+            // AS20
+            // 
+            this.AS20.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(50)))), ((int)(((byte)(83)))));
+            this.AS20.Image = global::TecnicasProyecto4.Properties.Resources.asiento;
+            this.AS20.Location = new System.Drawing.Point(461, 100);
+            this.AS20.Name = "AS20";
+            this.AS20.Size = new System.Drawing.Size(39, 33);
+            this.AS20.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.AS20.TabIndex = 42;
+            this.AS20.TabStop = false;
+            // 
+            // AS19
+            // 
+            this.AS19.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(50)))), ((int)(((byte)(83)))));
+            this.AS19.Image = global::TecnicasProyecto4.Properties.Resources.asiento;
+            this.AS19.Location = new System.Drawing.Point(426, 100);
+            this.AS19.Name = "AS19";
+            this.AS19.Size = new System.Drawing.Size(39, 33);
+            this.AS19.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.AS19.TabIndex = 43;
+            this.AS19.TabStop = false;
+            // 
+            // AS18
+            // 
+            this.AS18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(50)))), ((int)(((byte)(83)))));
+            this.AS18.Image = global::TecnicasProyecto4.Properties.Resources.asiento;
+            this.AS18.Location = new System.Drawing.Point(390, 100);
+            this.AS18.Name = "AS18";
+            this.AS18.Size = new System.Drawing.Size(39, 33);
+            this.AS18.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.AS18.TabIndex = 44;
+            this.AS18.TabStop = false;
+            // 
+            // AS17
+            // 
+            this.AS17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(50)))), ((int)(((byte)(83)))));
+            this.AS17.Image = global::TecnicasProyecto4.Properties.Resources.asiento;
+            this.AS17.Location = new System.Drawing.Point(325, 100);
+            this.AS17.Name = "AS17";
+            this.AS17.Size = new System.Drawing.Size(39, 33);
+            this.AS17.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.AS17.TabIndex = 35;
+            this.AS17.TabStop = false;
+            // 
+            // AS16
+            // 
+            this.AS16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(50)))), ((int)(((byte)(83)))));
+            this.AS16.Image = global::TecnicasProyecto4.Properties.Resources.asiento;
+            this.AS16.Location = new System.Drawing.Point(286, 100);
+            this.AS16.Name = "AS16";
+            this.AS16.Size = new System.Drawing.Size(39, 33);
+            this.AS16.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.AS16.TabIndex = 36;
+            this.AS16.TabStop = false;
+            // 
+            // AS15
+            // 
+            this.AS15.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(50)))), ((int)(((byte)(83)))));
+            this.AS15.Image = global::TecnicasProyecto4.Properties.Resources.asiento;
+            this.AS15.Location = new System.Drawing.Point(247, 100);
+            this.AS15.Name = "AS15";
+            this.AS15.Size = new System.Drawing.Size(39, 33);
+            this.AS15.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.AS15.TabIndex = 37;
+            this.AS15.TabStop = false;
+            // 
+            // AS14
+            // 
+            this.AS14.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(50)))), ((int)(((byte)(83)))));
+            this.AS14.Image = global::TecnicasProyecto4.Properties.Resources.asiento;
+            this.AS14.Location = new System.Drawing.Point(208, 100);
+            this.AS14.Name = "AS14";
+            this.AS14.Size = new System.Drawing.Size(39, 33);
+            this.AS14.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.AS14.TabIndex = 38;
+            this.AS14.TabStop = false;
+            // 
+            // AS13
+            // 
+            this.AS13.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(50)))), ((int)(((byte)(83)))));
+            this.AS13.Image = global::TecnicasProyecto4.Properties.Resources.asiento;
+            this.AS13.Location = new System.Drawing.Point(169, 100);
+            this.AS13.Name = "AS13";
+            this.AS13.Size = new System.Drawing.Size(39, 33);
+            this.AS13.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.AS13.TabIndex = 39;
+            this.AS13.TabStop = false;
+            // 
+            // AS12
+            // 
+            this.AS12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(50)))), ((int)(((byte)(83)))));
+            this.AS12.Image = global::TecnicasProyecto4.Properties.Resources.asiento;
+            this.AS12.Location = new System.Drawing.Point(130, 100);
+            this.AS12.Name = "AS12";
+            this.AS12.Size = new System.Drawing.Size(39, 33);
+            this.AS12.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.AS12.TabIndex = 40;
+            this.AS12.TabStop = false;
+            this.AS12.Click += new System.EventHandler(this.AS12_Click);
+            // 
+            // AS11
+            // 
+            this.AS11.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(50)))), ((int)(((byte)(83)))));
+            this.AS11.Image = global::TecnicasProyecto4.Properties.Resources.asiento;
+            this.AS11.Location = new System.Drawing.Point(91, 100);
+            this.AS11.Name = "AS11";
+            this.AS11.Size = new System.Drawing.Size(39, 33);
+            this.AS11.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.AS11.TabIndex = 41;
+            this.AS11.TabStop = false;
+            this.AS11.Click += new System.EventHandler(this.AS11_Click);
+            // 
+            // AS30
+            // 
+            this.AS30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(50)))), ((int)(((byte)(83)))));
+            this.AS30.Image = global::TecnicasProyecto4.Properties.Resources.asiento;
+            this.AS30.Location = new System.Drawing.Point(461, 134);
+            this.AS30.Name = "AS30";
+            this.AS30.Size = new System.Drawing.Size(39, 33);
+            this.AS30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.AS30.TabIndex = 52;
+            this.AS30.TabStop = false;
+            // 
+            // AS29
+            // 
+            this.AS29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(50)))), ((int)(((byte)(83)))));
+            this.AS29.Image = global::TecnicasProyecto4.Properties.Resources.asiento;
+            this.AS29.Location = new System.Drawing.Point(426, 134);
+            this.AS29.Name = "AS29";
+            this.AS29.Size = new System.Drawing.Size(39, 33);
+            this.AS29.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.AS29.TabIndex = 53;
+            this.AS29.TabStop = false;
+            // 
+            // AS28
+            // 
+            this.AS28.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(50)))), ((int)(((byte)(83)))));
+            this.AS28.Image = global::TecnicasProyecto4.Properties.Resources.asiento;
+            this.AS28.Location = new System.Drawing.Point(390, 134);
+            this.AS28.Name = "AS28";
+            this.AS28.Size = new System.Drawing.Size(39, 33);
+            this.AS28.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.AS28.TabIndex = 54;
+            this.AS28.TabStop = false;
+            // 
+            // AS27
+            // 
+            this.AS27.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(50)))), ((int)(((byte)(83)))));
+            this.AS27.Image = global::TecnicasProyecto4.Properties.Resources.asiento;
+            this.AS27.Location = new System.Drawing.Point(325, 134);
+            this.AS27.Name = "AS27";
+            this.AS27.Size = new System.Drawing.Size(39, 33);
+            this.AS27.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.AS27.TabIndex = 45;
+            this.AS27.TabStop = false;
+            // 
+            // AS26
+            // 
+            this.AS26.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(50)))), ((int)(((byte)(83)))));
+            this.AS26.Image = global::TecnicasProyecto4.Properties.Resources.asiento;
+            this.AS26.Location = new System.Drawing.Point(286, 134);
+            this.AS26.Name = "AS26";
+            this.AS26.Size = new System.Drawing.Size(39, 33);
+            this.AS26.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.AS26.TabIndex = 46;
+            this.AS26.TabStop = false;
+            // 
+            // AS25
+            // 
+            this.AS25.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(50)))), ((int)(((byte)(83)))));
+            this.AS25.Image = global::TecnicasProyecto4.Properties.Resources.asiento;
+            this.AS25.Location = new System.Drawing.Point(247, 134);
+            this.AS25.Name = "AS25";
+            this.AS25.Size = new System.Drawing.Size(39, 33);
+            this.AS25.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.AS25.TabIndex = 47;
+            this.AS25.TabStop = false;
+            // 
+            // AS24
+            // 
+            this.AS24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(50)))), ((int)(((byte)(83)))));
+            this.AS24.Image = global::TecnicasProyecto4.Properties.Resources.asiento;
+            this.AS24.Location = new System.Drawing.Point(208, 134);
+            this.AS24.Name = "AS24";
+            this.AS24.Size = new System.Drawing.Size(39, 33);
+            this.AS24.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.AS24.TabIndex = 48;
+            this.AS24.TabStop = false;
+            // 
+            // AS23
+            // 
+            this.AS23.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(50)))), ((int)(((byte)(83)))));
+            this.AS23.Image = global::TecnicasProyecto4.Properties.Resources.asiento;
+            this.AS23.Location = new System.Drawing.Point(169, 134);
+            this.AS23.Name = "AS23";
+            this.AS23.Size = new System.Drawing.Size(39, 33);
+            this.AS23.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.AS23.TabIndex = 49;
+            this.AS23.TabStop = false;
+            // 
+            // AS22
+            // 
+            this.AS22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(50)))), ((int)(((byte)(83)))));
+            this.AS22.Image = global::TecnicasProyecto4.Properties.Resources.asiento;
+            this.AS22.Location = new System.Drawing.Point(130, 134);
+            this.AS22.Name = "AS22";
+            this.AS22.Size = new System.Drawing.Size(39, 33);
+            this.AS22.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.AS22.TabIndex = 50;
+            this.AS22.TabStop = false;
+            // 
+            // AS21
+            // 
+            this.AS21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(50)))), ((int)(((byte)(83)))));
+            this.AS21.Image = global::TecnicasProyecto4.Properties.Resources.asiento;
+            this.AS21.Location = new System.Drawing.Point(91, 134);
+            this.AS21.Name = "AS21";
+            this.AS21.Size = new System.Drawing.Size(39, 33);
+            this.AS21.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.AS21.TabIndex = 51;
+            this.AS21.TabStop = false;
+            // 
+            // AS50
+            // 
+            this.AS50.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(50)))), ((int)(((byte)(83)))));
+            this.AS50.Image = global::TecnicasProyecto4.Properties.Resources.asiento;
+            this.AS50.Location = new System.Drawing.Point(461, 202);
+            this.AS50.Name = "AS50";
+            this.AS50.Size = new System.Drawing.Size(39, 33);
+            this.AS50.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.AS50.TabIndex = 72;
+            this.AS50.TabStop = false;
+            // 
+            // AS49
+            // 
+            this.AS49.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(50)))), ((int)(((byte)(83)))));
+            this.AS49.Image = global::TecnicasProyecto4.Properties.Resources.asiento;
+            this.AS49.Location = new System.Drawing.Point(426, 202);
+            this.AS49.Name = "AS49";
+            this.AS49.Size = new System.Drawing.Size(39, 33);
+            this.AS49.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.AS49.TabIndex = 73;
+            this.AS49.TabStop = false;
+            // 
+            // AS48
+            // 
+            this.AS48.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(50)))), ((int)(((byte)(83)))));
+            this.AS48.Image = global::TecnicasProyecto4.Properties.Resources.asiento;
+            this.AS48.Location = new System.Drawing.Point(390, 202);
+            this.AS48.Name = "AS48";
+            this.AS48.Size = new System.Drawing.Size(39, 33);
+            this.AS48.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.AS48.TabIndex = 74;
+            this.AS48.TabStop = false;
+            // 
+            // AS47
+            // 
+            this.AS47.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(50)))), ((int)(((byte)(83)))));
+            this.AS47.Image = global::TecnicasProyecto4.Properties.Resources.asiento;
+            this.AS47.Location = new System.Drawing.Point(325, 202);
+            this.AS47.Name = "AS47";
+            this.AS47.Size = new System.Drawing.Size(39, 33);
+            this.AS47.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.AS47.TabIndex = 65;
+            this.AS47.TabStop = false;
+            // 
+            // AS46
+            // 
+            this.AS46.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(50)))), ((int)(((byte)(83)))));
+            this.AS46.Image = global::TecnicasProyecto4.Properties.Resources.asiento;
+            this.AS46.Location = new System.Drawing.Point(286, 202);
+            this.AS46.Name = "AS46";
+            this.AS46.Size = new System.Drawing.Size(39, 33);
+            this.AS46.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.AS46.TabIndex = 66;
+            this.AS46.TabStop = false;
+            // 
+            // AS45
+            // 
+            this.AS45.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(50)))), ((int)(((byte)(83)))));
+            this.AS45.Image = global::TecnicasProyecto4.Properties.Resources.asiento;
+            this.AS45.Location = new System.Drawing.Point(247, 202);
+            this.AS45.Name = "AS45";
+            this.AS45.Size = new System.Drawing.Size(39, 33);
+            this.AS45.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.AS45.TabIndex = 67;
+            this.AS45.TabStop = false;
+            // 
+            // AS44
+            // 
+            this.AS44.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(50)))), ((int)(((byte)(83)))));
+            this.AS44.Image = global::TecnicasProyecto4.Properties.Resources.asiento;
+            this.AS44.Location = new System.Drawing.Point(208, 202);
+            this.AS44.Name = "AS44";
+            this.AS44.Size = new System.Drawing.Size(39, 33);
+            this.AS44.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.AS44.TabIndex = 68;
+            this.AS44.TabStop = false;
+            // 
+            // AS43
+            // 
+            this.AS43.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(50)))), ((int)(((byte)(83)))));
+            this.AS43.Image = global::TecnicasProyecto4.Properties.Resources.asiento;
+            this.AS43.Location = new System.Drawing.Point(169, 202);
+            this.AS43.Name = "AS43";
+            this.AS43.Size = new System.Drawing.Size(39, 33);
+            this.AS43.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.AS43.TabIndex = 69;
+            this.AS43.TabStop = false;
+            // 
+            // AS42
+            // 
+            this.AS42.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(50)))), ((int)(((byte)(83)))));
+            this.AS42.Image = global::TecnicasProyecto4.Properties.Resources.asiento;
+            this.AS42.Location = new System.Drawing.Point(130, 202);
+            this.AS42.Name = "AS42";
+            this.AS42.Size = new System.Drawing.Size(39, 33);
+            this.AS42.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.AS42.TabIndex = 70;
+            this.AS42.TabStop = false;
+            // 
+            // AS41
+            // 
+            this.AS41.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(50)))), ((int)(((byte)(83)))));
+            this.AS41.Image = global::TecnicasProyecto4.Properties.Resources.asiento;
+            this.AS41.Location = new System.Drawing.Point(91, 202);
+            this.AS41.Name = "AS41";
+            this.AS41.Size = new System.Drawing.Size(39, 33);
+            this.AS41.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.AS41.TabIndex = 71;
+            this.AS41.TabStop = false;
+            // 
+            // AS40
+            // 
+            this.AS40.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(50)))), ((int)(((byte)(83)))));
+            this.AS40.Image = global::TecnicasProyecto4.Properties.Resources.asiento;
+            this.AS40.Location = new System.Drawing.Point(461, 168);
+            this.AS40.Name = "AS40";
+            this.AS40.Size = new System.Drawing.Size(39, 33);
+            this.AS40.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.AS40.TabIndex = 62;
+            this.AS40.TabStop = false;
+            // 
+            // AS39
+            // 
+            this.AS39.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(50)))), ((int)(((byte)(83)))));
+            this.AS39.Image = global::TecnicasProyecto4.Properties.Resources.asiento;
+            this.AS39.Location = new System.Drawing.Point(426, 168);
+            this.AS39.Name = "AS39";
+            this.AS39.Size = new System.Drawing.Size(39, 33);
+            this.AS39.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.AS39.TabIndex = 63;
+            this.AS39.TabStop = false;
+            // 
+            // AS38
+            // 
+            this.AS38.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(50)))), ((int)(((byte)(83)))));
+            this.AS38.Image = global::TecnicasProyecto4.Properties.Resources.asiento;
+            this.AS38.Location = new System.Drawing.Point(390, 168);
+            this.AS38.Name = "AS38";
+            this.AS38.Size = new System.Drawing.Size(39, 33);
+            this.AS38.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.AS38.TabIndex = 64;
+            this.AS38.TabStop = false;
+            // 
+            // AS37
+            // 
+            this.AS37.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(50)))), ((int)(((byte)(83)))));
+            this.AS37.Image = global::TecnicasProyecto4.Properties.Resources.asiento;
+            this.AS37.Location = new System.Drawing.Point(325, 168);
+            this.AS37.Name = "AS37";
+            this.AS37.Size = new System.Drawing.Size(39, 33);
+            this.AS37.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.AS37.TabIndex = 55;
+            this.AS37.TabStop = false;
+            // 
+            // AS36
+            // 
+            this.AS36.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(50)))), ((int)(((byte)(83)))));
+            this.AS36.Image = global::TecnicasProyecto4.Properties.Resources.asiento;
+            this.AS36.Location = new System.Drawing.Point(286, 168);
+            this.AS36.Name = "AS36";
+            this.AS36.Size = new System.Drawing.Size(39, 33);
+            this.AS36.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.AS36.TabIndex = 56;
+            this.AS36.TabStop = false;
+            // 
+            // AS35
+            // 
+            this.AS35.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(50)))), ((int)(((byte)(83)))));
+            this.AS35.Image = global::TecnicasProyecto4.Properties.Resources.asiento;
+            this.AS35.Location = new System.Drawing.Point(247, 168);
+            this.AS35.Name = "AS35";
+            this.AS35.Size = new System.Drawing.Size(39, 33);
+            this.AS35.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.AS35.TabIndex = 57;
+            this.AS35.TabStop = false;
+            // 
+            // AS34
+            // 
+            this.AS34.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(50)))), ((int)(((byte)(83)))));
+            this.AS34.Image = global::TecnicasProyecto4.Properties.Resources.asiento;
+            this.AS34.Location = new System.Drawing.Point(208, 168);
+            this.AS34.Name = "AS34";
+            this.AS34.Size = new System.Drawing.Size(39, 33);
+            this.AS34.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.AS34.TabIndex = 58;
+            this.AS34.TabStop = false;
+            // 
+            // AS33
+            // 
+            this.AS33.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(50)))), ((int)(((byte)(83)))));
+            this.AS33.Image = global::TecnicasProyecto4.Properties.Resources.asiento;
+            this.AS33.Location = new System.Drawing.Point(169, 168);
+            this.AS33.Name = "AS33";
+            this.AS33.Size = new System.Drawing.Size(39, 33);
+            this.AS33.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.AS33.TabIndex = 59;
+            this.AS33.TabStop = false;
+            // 
+            // AS32
+            // 
+            this.AS32.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(50)))), ((int)(((byte)(83)))));
+            this.AS32.Image = global::TecnicasProyecto4.Properties.Resources.asiento;
+            this.AS32.Location = new System.Drawing.Point(130, 168);
+            this.AS32.Name = "AS32";
+            this.AS32.Size = new System.Drawing.Size(39, 33);
+            this.AS32.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.AS32.TabIndex = 60;
+            this.AS32.TabStop = false;
+            // 
+            // AS31
+            // 
+            this.AS31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(50)))), ((int)(((byte)(83)))));
+            this.AS31.Image = global::TecnicasProyecto4.Properties.Resources.asiento;
+            this.AS31.Location = new System.Drawing.Point(91, 168);
+            this.AS31.Name = "AS31";
+            this.AS31.Size = new System.Drawing.Size(39, 33);
+            this.AS31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.AS31.TabIndex = 61;
+            this.AS31.TabStop = false;
+            // 
             // Asientos
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(984, 398);
+            this.Controls.Add(this.AS50);
+            this.Controls.Add(this.AS49);
+            this.Controls.Add(this.AS48);
+            this.Controls.Add(this.AS47);
+            this.Controls.Add(this.AS46);
+            this.Controls.Add(this.AS45);
+            this.Controls.Add(this.AS44);
+            this.Controls.Add(this.AS43);
+            this.Controls.Add(this.AS42);
+            this.Controls.Add(this.AS41);
+            this.Controls.Add(this.AS40);
+            this.Controls.Add(this.AS39);
+            this.Controls.Add(this.AS38);
+            this.Controls.Add(this.AS37);
+            this.Controls.Add(this.AS36);
+            this.Controls.Add(this.AS35);
+            this.Controls.Add(this.AS34);
+            this.Controls.Add(this.AS33);
+            this.Controls.Add(this.AS32);
+            this.Controls.Add(this.AS31);
+            this.Controls.Add(this.AS30);
+            this.Controls.Add(this.AS29);
+            this.Controls.Add(this.AS28);
+            this.Controls.Add(this.AS27);
+            this.Controls.Add(this.AS26);
+            this.Controls.Add(this.AS25);
+            this.Controls.Add(this.AS24);
+            this.Controls.Add(this.AS23);
+            this.Controls.Add(this.AS22);
+            this.Controls.Add(this.AS21);
+            this.Controls.Add(this.AS20);
+            this.Controls.Add(this.AS19);
+            this.Controls.Add(this.AS18);
+            this.Controls.Add(this.AS17);
+            this.Controls.Add(this.AS16);
+            this.Controls.Add(this.AS15);
+            this.Controls.Add(this.AS14);
+            this.Controls.Add(this.AS13);
+            this.Controls.Add(this.AS12);
+            this.Controls.Add(this.AS11);
             this.Controls.Add(descripcionVeLabel);
             this.Controls.Add(this.descripcionVeTextBox);
             this.Controls.Add(fechaVeLabel);
@@ -572,14 +992,10 @@
             this.Controls.Add(this.AS3);
             this.Controls.Add(this.AS2);
             this.Controls.Add(this.AS1);
-            this.Controls.Add(this.asientosBindingNavigator);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Asientos";
             this.Text = "Asientos";
             this.Load += new System.EventHandler(this.Asientos_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.asientosBindingNavigator)).EndInit();
-            this.asientosBindingNavigator.ResumeLayout(false);
-            this.asientosBindingNavigator.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.asientosBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cineDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.AS7)).EndInit();
@@ -593,6 +1009,46 @@
             ((System.ComponentModel.ISupportInitialize)(this.AS9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.AS8)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.comprasBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS20)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS19)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS18)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS17)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS15)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS14)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS13)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS11)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS30)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS29)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS28)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS27)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS26)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS25)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS24)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS23)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS22)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS50)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS49)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS48)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS47)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS46)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS45)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS44)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS43)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS42)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS41)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS40)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS39)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS38)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS37)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS36)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS35)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS34)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS33)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS32)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.AS31)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -604,19 +1060,6 @@
         private System.Windows.Forms.BindingSource asientosBindingSource;
         private CineDataSet1TableAdapters.AsientosTableAdapter asientosTableAdapter;
         private CineDataSet1TableAdapters.TableAdapterManager tableAdapterManager;
-        private System.Windows.Forms.BindingNavigator asientosBindingNavigator;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
-        private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMovePreviousItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator;
-        private System.Windows.Forms.ToolStripTextBox bindingNavigatorPositionItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator1;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
-        private System.Windows.Forms.ToolStripButton asientosBindingNavigatorSaveItem;
         private System.Windows.Forms.PictureBox AS7;
         private System.Windows.Forms.PictureBox AS6;
         private System.Windows.Forms.PictureBox AS5;
@@ -638,5 +1081,45 @@
         private System.Windows.Forms.TextBox montoVeTextBox;
         private System.Windows.Forms.TextBox nameUseTextBox;
         private System.Windows.Forms.TextBox funciOComboTextBox;
+        private System.Windows.Forms.PictureBox AS20;
+        private System.Windows.Forms.PictureBox AS19;
+        private System.Windows.Forms.PictureBox AS18;
+        private System.Windows.Forms.PictureBox AS17;
+        private System.Windows.Forms.PictureBox AS16;
+        private System.Windows.Forms.PictureBox AS15;
+        private System.Windows.Forms.PictureBox AS14;
+        private System.Windows.Forms.PictureBox AS13;
+        private System.Windows.Forms.PictureBox AS12;
+        private System.Windows.Forms.PictureBox AS11;
+        private System.Windows.Forms.PictureBox AS30;
+        private System.Windows.Forms.PictureBox AS29;
+        private System.Windows.Forms.PictureBox AS28;
+        private System.Windows.Forms.PictureBox AS27;
+        private System.Windows.Forms.PictureBox AS26;
+        private System.Windows.Forms.PictureBox AS25;
+        private System.Windows.Forms.PictureBox AS24;
+        private System.Windows.Forms.PictureBox AS23;
+        private System.Windows.Forms.PictureBox AS22;
+        private System.Windows.Forms.PictureBox AS21;
+        private System.Windows.Forms.PictureBox AS50;
+        private System.Windows.Forms.PictureBox AS49;
+        private System.Windows.Forms.PictureBox AS48;
+        private System.Windows.Forms.PictureBox AS47;
+        private System.Windows.Forms.PictureBox AS46;
+        private System.Windows.Forms.PictureBox AS45;
+        private System.Windows.Forms.PictureBox AS44;
+        private System.Windows.Forms.PictureBox AS43;
+        private System.Windows.Forms.PictureBox AS42;
+        private System.Windows.Forms.PictureBox AS41;
+        private System.Windows.Forms.PictureBox AS40;
+        private System.Windows.Forms.PictureBox AS39;
+        private System.Windows.Forms.PictureBox AS38;
+        private System.Windows.Forms.PictureBox AS37;
+        private System.Windows.Forms.PictureBox AS36;
+        private System.Windows.Forms.PictureBox AS35;
+        private System.Windows.Forms.PictureBox AS34;
+        private System.Windows.Forms.PictureBox AS33;
+        private System.Windows.Forms.PictureBox AS32;
+        private System.Windows.Forms.PictureBox AS31;
     }
 }

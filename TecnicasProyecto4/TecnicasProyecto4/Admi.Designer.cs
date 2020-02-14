@@ -41,7 +41,6 @@
             this.barracontenido = new System.Windows.Forms.Panel();
             this.button6 = new System.Windows.Forms.Button();
             this.button7 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.btnClose = new System.Windows.Forms.PictureBox();
             this.btnMin = new System.Windows.Forms.PictureBox();
             this.NomUsu = new System.Windows.Forms.Label();
@@ -190,7 +189,7 @@
             // 
             // barracontenido
             // 
-            this.barracontenido.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
+            this.barracontenido.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(45)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
             this.barracontenido.Dock = System.Windows.Forms.DockStyle.Fill;
             this.barracontenido.Location = new System.Drawing.Point(244, 126);
             this.barracontenido.Margin = new System.Windows.Forms.Padding(2);
@@ -212,6 +211,7 @@
             this.button6.TabIndex = 0;
             this.button6.Text = "REGISTRO USUARIOS";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button7
             // 
@@ -228,22 +228,6 @@
             this.button7.Text = "VENTAS";
             this.button7.UseVisualStyleBackColor = true;
             this.button7.Click += new System.EventHandler(this.button7_Click);
-            // 
-            // button1
-            // 
-            this.button1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(95)))), ((int)(((byte)(151)))));
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.Location = new System.Drawing.Point(1105, 1);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(274, 126);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "ESTADISTICAS";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btnClose
             // 
@@ -301,7 +285,6 @@
             this.barrainicio.Controls.Add(this.NomUsu);
             this.barrainicio.Controls.Add(this.btnMin);
             this.barrainicio.Controls.Add(this.btnClose);
-            this.barrainicio.Controls.Add(this.button1);
             this.barrainicio.Controls.Add(this.button7);
             this.barrainicio.Controls.Add(this.button6);
             this.barrainicio.Dock = System.Windows.Forms.DockStyle.Top;
@@ -349,7 +332,6 @@
         private System.Windows.Forms.Button ModPeli;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox btnClose;
         private System.Windows.Forms.PictureBox btnMin;
         private System.Windows.Forms.Label NomUsu;
