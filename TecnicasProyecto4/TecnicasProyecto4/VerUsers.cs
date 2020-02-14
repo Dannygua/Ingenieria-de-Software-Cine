@@ -33,5 +33,10 @@ namespace TecnicasProyecto4
             this.tableAdapterManager.UpdateAll(this.cineDataSet);
 
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

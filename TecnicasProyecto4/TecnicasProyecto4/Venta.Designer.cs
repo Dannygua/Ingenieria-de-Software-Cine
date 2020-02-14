@@ -124,7 +124,7 @@
             this.funcionBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.funcionBindingNavigator.Name = "funcionBindingNavigator";
             this.funcionBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.funcionBindingNavigator.Size = new System.Drawing.Size(1454, 27);
+            this.funcionBindingNavigator.Size = new System.Drawing.Size(1399, 27);
             this.funcionBindingNavigator.TabIndex = 0;
             this.funcionBindingNavigator.Text = "bindingNavigator1";
             this.funcionBindingNavigator.RefreshItems += new System.EventHandler(this.funcionBindingNavigator_RefreshItems);
@@ -254,7 +254,7 @@
             this.findCodHoToolStripButton});
             this.findCodHoToolStrip.Location = new System.Drawing.Point(0, 27);
             this.findCodHoToolStrip.Name = "findCodHoToolStrip";
-            this.findCodHoToolStrip.Size = new System.Drawing.Size(1454, 25);
+            this.findCodHoToolStrip.Size = new System.Drawing.Size(1399, 25);
             this.findCodHoToolStrip.TabIndex = 3;
             this.findCodHoToolStrip.Text = "findCodHoToolStrip";
             // 
@@ -338,7 +338,7 @@
             // VAsientos
             // 
             this.VAsientos.Dock = System.Windows.Forms.DockStyle.Right;
-            this.VAsientos.Location = new System.Drawing.Point(470, 52);
+            this.VAsientos.Location = new System.Drawing.Point(415, 52);
             this.VAsientos.Name = "VAsientos";
             this.VAsientos.Size = new System.Drawing.Size(984, 407);
             this.VAsientos.TabIndex = 12;
@@ -353,7 +353,7 @@
             this.btnSeleccionFuncion.ForeColor = System.Drawing.Color.White;
             this.btnSeleccionFuncion.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSeleccionFuncion.Location = new System.Drawing.Point(26, 293);
-            this.btnSeleccionFuncion.Margin = new System.Windows.Forms.Padding(2);
+            this.btnSeleccionFuncion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSeleccionFuncion.Name = "btnSeleccionFuncion";
             this.btnSeleccionFuncion.Size = new System.Drawing.Size(344, 78);
             this.btnSeleccionFuncion.TabIndex = 13;
@@ -371,7 +371,7 @@
             this.BtnVolver.ForeColor = System.Drawing.Color.White;
             this.BtnVolver.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.BtnVolver.Location = new System.Drawing.Point(11, 405);
-            this.BtnVolver.Margin = new System.Windows.Forms.Padding(2);
+            this.BtnVolver.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.BtnVolver.Name = "BtnVolver";
             this.BtnVolver.Size = new System.Drawing.Size(110, 43);
             this.BtnVolver.TabIndex = 13;
@@ -425,7 +425,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ClientSize = new System.Drawing.Size(1454, 459);
+            this.ClientSize = new System.Drawing.Size(1399, 459);
             this.Controls.Add(this.lblPelicula);
             this.Controls.Add(this.codigoFuTextBox);
             this.Controls.Add(this.BtnVolver);
@@ -464,18 +464,13 @@
         private CineDataSet1TableAdapters.FuncionTableAdapter funcionTableAdapter;
         private CineDataSet1TableAdapters.TableAdapterManager tableAdapterManager;
         private System.Windows.Forms.BindingNavigator funcionBindingNavigator;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
         private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMovePreviousItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator;
         private System.Windows.Forms.ToolStripTextBox bindingNavigatorPositionItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator1;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
-        private System.Windows.Forms.ToolStripButton funcionBindingNavigatorSaveItem;
         private System.Windows.Forms.TextBox codigoHoTextBox;
         private System.Windows.Forms.ToolStrip findCodHoToolStrip;
         private System.Windows.Forms.ToolStripLabel param1ToolStripLabel;
@@ -492,5 +487,10 @@
         private System.Windows.Forms.Button BtnVolver;
         private System.Windows.Forms.TextBox codigoFuTextBox;
         private System.Windows.Forms.Label lblPelicula;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
+        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
+        private System.Windows.Forms.ToolStripButton funcionBindingNavigatorSaveItem;
     }
 }

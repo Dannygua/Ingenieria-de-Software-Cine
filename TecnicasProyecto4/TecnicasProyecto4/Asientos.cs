@@ -24,6 +24,36 @@ namespace TecnicasProyecto4
         int asiento8 = 0;
         int asiento9 = 0;
         int asiento10 = 0;
+        int asiento11 = 0;
+        int asiento12 = 0;
+        int asiento13 = 0;
+        int asiento14 = 0;
+        int asiento15 = 0;
+        int asiento16 = 0;
+        int asiento17 = 0;
+        int asiento18 = 0;
+        int asiento19 = 0;
+        int asiento20 = 0;
+        int asiento21 = 0;
+        int asiento22 = 0;
+        int asiento23 = 0;
+        int asiento24 = 0;
+        int asiento25 = 0;
+        int asiento26 = 0;
+        int asiento27 = 0;
+        int asiento28 = 0;
+        int asiento29 = 0;
+        int asiento30 = 0;
+        int asiento31 = 0;
+        int asiento32 = 0;
+        int asiento33 = 0;
+        int asiento34 = 0;
+        int asiento35 = 0;
+        int asiento36 = 0;
+        int asiento37 = 0;
+        int asiento38 = 0;
+        int asiento39 = 0;
+        int asiento40 = 0;
         public int Too;
         public Asientos(string text)
         {
@@ -275,6 +305,30 @@ namespace TecnicasProyecto4
         {
             this.comprasTableAdapter.AgregarVenta(descripcionVeTextBox.Text,fechaVeDateTimePicker.Text, Convert.ToDecimal(montoVeTextBox.Text),nameUseTextBox.Text, Int32.Parse(funciOComboTextBox.Text));
             this.Visible = false;
+        }
+
+        private void AS11_Click(object sender, EventArgs e)
+        {
+            if (asiento11 == 0)
+            {
+                AS11.BackColor = Color.FromArgb(248, 19, 40);
+                asiento11 = 1;
+                asientostotales += asiento11;
+            }
+            else
+            {
+                asientostotales -= asiento11;
+                asiento11 = 0;
+                AS11.BackColor = Color.FromArgb(17, 50, 83);
+
+            }
+
+            AsientosC.Text = "" + asientostotales;
+        }
+
+        private void AS12_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

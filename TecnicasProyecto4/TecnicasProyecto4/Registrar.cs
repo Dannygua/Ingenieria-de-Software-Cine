@@ -177,7 +177,32 @@ namespace TecnicasProyecto4
 
         private void btnCrear_Click(object sender, EventArgs e)
         {
-            logear(lblNombreU.Text, lblContra.Text, lblNombre.Text, lblApellido.Text, lblCorreo.Text, FechaN.Text, "Cliente");
+            con.Open();
+            string st = "insert into Usuarios(NameUse, Pass, Nombres, Apellidos, Correo, fechanacimiento) values(@nombreU, @contra, @nombre, @apellido, @correo, @fecha)";
+            SqlCommand cmd = new SqlCommand(st, con);
+            cmd.Parameters.AddWithValue("@nombre", lblNombre.Text);
+            cmd.Parameters.AddWithValue("@apellido", lblApellido.Text);
+            cmd.Parameters.AddWithValue("@nombreU", lblNombreU.Text);
+            cmd.Parameters.AddWithValue("@contra", lblContra.Text);
+            cmd.Parameters.AddWithValue("@correo", lblCorreo.Text);
+            cmd.Parameters.AddWithValue("@fecha", FechaN.Value);
+            cmd.ExecuteNonQuery();
+            con.Close();
+      
+          //  string cadena = "insert into Usuarios(NameUse, Pass, Nombres, Apellidos, Correo, fechanacimiento, TipoUsuario) values ('" & nombre & "'," & apellido & ")";
+         //   comando = new SqlCommand()
+
+          //  logear(lblNombreU.Text, lblContra.Text, lblNombre.Text, lblApellido.Text, lblCorreo.Text, FechaN.Text, "Cliente");
+        }
+
+        private void lblNombre_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblCorreo_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

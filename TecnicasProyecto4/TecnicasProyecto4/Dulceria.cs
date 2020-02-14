@@ -1,142 +1,71 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
 using System.Data;
-using System.Data.SqlClient;
 using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace TecnicasProyecto4
 {
     public partial class Dulceria : Form
     {
-
-        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-O15S8EP;Initial Catalog=Cine;User ID=Danny;Password=12345");
-
-        public DataTable TablaCodigo()
-        {
-
-            SqlCommand cmd = new SqlCommand("Select ImagenCo ,CodigoCo from Combos  ", con);
-
-            SqlDataAdapter sda = new SqlDataAdapter(cmd);
-            DataTable dt = new DataTable();
-            sda.Fill(dt);
-            return dt;
-        }
-
-        public void MandarDatos(string codigo)
-        {
-
-            con.Open();
-
-            SqlCommand cmd = new SqlCommand("Select NombreCo ,PrecioCo from Combos where CodigoCo =@codigo ", con);
-            cmd.Parameters.AddWithValue("codigo", codigo);
-            SqlDataAdapter sda = new SqlDataAdapter(cmd);
-            DataTable dt = new DataTable();
-            sda.Fill(dt);
-
-            SqlCommand cmd2 = new SqlCommand("Select ContenidoCo ,ImagenCo  from Combos where CodigoCo =@codigo ", con);
-            cmd2.Parameters.AddWithValue("codigo", codigo);
-            SqlDataAdapter sda2 = new SqlDataAdapter(cmd2);
-            DataTable dt2 = new DataTable();
-            sda2.Fill(dt2);
-
-            Titulo.Text = dt.Rows[0][0].ToString();
-            Precio.Text = dt.Rows[0][1].ToString();
-            Contenido.Text = dt2.Rows[0][0].ToString();
-            ComboT1.BackgroundImage = Image.FromFile(@"" + dt2.Rows[0][1].ToString());
-
-
-
-            con.Close();
-
-        }
-
-
         public Dulceria()
         {
-
             InitializeComponent();
-
-
-            con.Open();
-
-
-            DataTable dt = TablaCodigo();
-
-            T1.BackgroundImage = Image.FromFile(@"" + dt.Rows[0][0].ToString());
-            T2.BackgroundImage = Image.FromFile(@"" + dt.Rows[1][0].ToString());
-            T3.BackgroundImage = Image.FromFile(@"" + dt.Rows[2][0].ToString());
-            T4.BackgroundImage = Image.FromFile(@"" + dt.Rows[3][0].ToString());
-            T5.BackgroundImage = Image.FromFile(@"" + dt.Rows[4][0].ToString());
-            T6.BackgroundImage = Image.FromFile(@"" + dt.Rows[5][0].ToString());
-            T7.BackgroundImage = Image.FromFile(@"" + dt.Rows[6][0].ToString());
-
-            con.Close();
         }
 
-        private void T1_Click(object sender, EventArgs e)
+        private void combosBindingNavigatorSaveItem_Click(object sender, EventArgs e)
         {
-            Descripcion1.Visible = true;
-            DataTable dt = TablaCodigo();
-            String codigo = dt.Rows[0][1].ToString();
-            MandarDatos(codigo);
+            this.Validate();
+            this.combosBindingSource.EndEdit();
+            this.tableAdapterManager.UpdateAll(this.cineDataSet1);
+
         }
 
         private void Dulceria_Load(object sender, EventArgs e)
         {
+            // TODO: esta línea de código carga datos en la tabla 'cineDataSet1.Compras' Puede moverla o quitarla según sea necesario.
+            this.comprasTableAdapter.Fill(this.cineDataSet1.Compras);
+            // TODO: esta línea de código carga datos en la tabla 'cineDataSet1.Combos' Puede moverla o quitarla según sea necesario.
+            this.combosTableAdapter.Fill(this.cineDataSet1.Combos);
 
         }
 
-        private void Dulceria_Click(object sender, EventArgs e)
+        private void imagenCoLabel_Click(object sender, EventArgs e)
         {
-            Descripcion1.Visible = false;
+
         }
 
-        private void T2_Click(object sender, EventArgs e)
+        private void btnSeleccionarCombo_Click(object sender, EventArgs e)
         {
-            Descripcion1.Visible = true;
-            DataTable dt = TablaCodigo();
-            String codigo = dt.Rows[1][1].ToString();
-            MandarDatos(codigo);
+            Descripcion.Visible = true;
+            nameUseTextBox.Text = Cliente.Too;
+            descripcionVeTextBox.Text = "Venta";
+            funciOComboTextBox.Text = "2";
+            int Canti = Int32.Parse(Cantidad.Text);
+            decimal MontoPagar = Convert.ToDecimal(precioCoTextBox.Text);
+            decimal SumaPagar = Canti* MontoPagar;
+            montoVeTextBox.Text = "" + SumaPagar;
+            fechaVeDateTimePicker.Text = DateTime.Now.ToString("dd/MM/yyyy");
         }
 
-        private void T3_Click(object sender, EventArgs e)
+        private void btnCompra_Click(object sender, EventArgs e)
         {
-            Descripcion1.Visible = true;
-            DataTable dt = TablaCodigo();
-            String codigo = dt.Rows[2][1].ToString();
-            MandarDatos(codigo);
+            this.comprasTableAdapter.AgregarVenta(descripcionVeTextBox.Text, fechaVeDateTimePicker.Text, Convert.ToDecimal(montoVeTextBox.Text), nameUseTextBox.Text, Int32.Parse(funciOComboTextBox.Text));
+            this.Visible = false;
         }
 
-        private void T4_Click(object sender, EventArgs e)
+        private void contenidoCoTextBox_TextChanged(object sender, EventArgs e)
         {
-            Descripcion1.Visible = true;
-            DataTable dt = TablaCodigo();
-            String codigo = dt.Rows[3][1].ToString();
-            MandarDatos(codigo);
+
         }
 
-        private void T5_Click(object sender, EventArgs e)
+        private void combosBindingNavigator_RefreshItems(object sender, EventArgs e)
         {
-            Descripcion1.Visible = true;
-            DataTable dt = TablaCodigo();
-            String codigo = dt.Rows[4][1].ToString();
-            MandarDatos(codigo);
-        }
 
-        private void T6_Click(object sender, EventArgs e)
-        {
-            Descripcion1.Visible = true;
-            DataTable dt = TablaCodigo();
-            String codigo = dt.Rows[5][1].ToString();
-            MandarDatos(codigo);
-        }
-
-        private void T7_Click(object sender, EventArgs e)
-        {
-            Descripcion1.Visible = true;
-            DataTable dt = TablaCodigo();
-            String codigo = dt.Rows[6][1].ToString();
-            MandarDatos(codigo);
         }
     }
 }

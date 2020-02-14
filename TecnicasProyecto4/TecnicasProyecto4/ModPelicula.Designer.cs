@@ -37,22 +37,8 @@
             System.Windows.Forms.Label imagenPeLabel;
             System.Windows.Forms.Label categoriaPeLabel;
             System.Windows.Forms.Label codigoPeLabel;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ModPelicula));
-            this.peliculasBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
-            this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
             this.peliculasBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.cineDataSet1 = new TecnicasProyecto4.CineDataSet1();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
-            this.bindingNavigatorDeleteItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
-            this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
-            this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.peliculasBindingNavigatorSaveItem = new System.Windows.Forms.ToolStripButton();
             this.nombrePeTextBox = new System.Windows.Forms.TextBox();
             this.webPeTextBox = new System.Windows.Forms.TextBox();
             this.directoresPeTextBox = new System.Windows.Forms.TextBox();
@@ -86,8 +72,6 @@
             imagenPeLabel = new System.Windows.Forms.Label();
             categoriaPeLabel = new System.Windows.Forms.Label();
             codigoPeLabel = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.peliculasBindingNavigator)).BeginInit();
-            this.peliculasBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.peliculasBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cineDataSet1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.peliculasDataGridView)).BeginInit();
@@ -173,46 +157,6 @@
             codigoPeLabel.TabIndex = 1;
             codigoPeLabel.Text = "Codigo:";
             // 
-            // peliculasBindingNavigator
-            // 
-            this.peliculasBindingNavigator.AddNewItem = this.bindingNavigatorAddNewItem;
-            this.peliculasBindingNavigator.BindingSource = this.peliculasBindingSource;
-            this.peliculasBindingNavigator.CountItem = this.bindingNavigatorCountItem;
-            this.peliculasBindingNavigator.DeleteItem = this.bindingNavigatorDeleteItem;
-            this.peliculasBindingNavigator.ImageScalingSize = new System.Drawing.Size(20, 20);
-            this.peliculasBindingNavigator.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.bindingNavigatorMoveFirstItem,
-            this.bindingNavigatorMovePreviousItem,
-            this.bindingNavigatorSeparator,
-            this.bindingNavigatorPositionItem,
-            this.bindingNavigatorCountItem,
-            this.bindingNavigatorSeparator1,
-            this.bindingNavigatorMoveNextItem,
-            this.bindingNavigatorMoveLastItem,
-            this.bindingNavigatorSeparator2,
-            this.bindingNavigatorAddNewItem,
-            this.bindingNavigatorDeleteItem,
-            this.peliculasBindingNavigatorSaveItem});
-            this.peliculasBindingNavigator.Location = new System.Drawing.Point(0, 0);
-            this.peliculasBindingNavigator.MoveFirstItem = this.bindingNavigatorMoveFirstItem;
-            this.peliculasBindingNavigator.MoveLastItem = this.bindingNavigatorMoveLastItem;
-            this.peliculasBindingNavigator.MoveNextItem = this.bindingNavigatorMoveNextItem;
-            this.peliculasBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
-            this.peliculasBindingNavigator.Name = "peliculasBindingNavigator";
-            this.peliculasBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.peliculasBindingNavigator.Size = new System.Drawing.Size(1167, 27);
-            this.peliculasBindingNavigator.TabIndex = 0;
-            this.peliculasBindingNavigator.Text = "bindingNavigator1";
-            // 
-            // bindingNavigatorAddNewItem
-            // 
-            this.bindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
-            this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
-            this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(24, 24);
-            this.bindingNavigatorAddNewItem.Text = "Agregar nuevo";
-            // 
             // peliculasBindingSource
             // 
             this.peliculasBindingSource.DataMember = "Peliculas";
@@ -222,91 +166,6 @@
             // 
             this.cineDataSet1.DataSetName = "CineDataSet1";
             this.cineDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(37, 24);
-            this.bindingNavigatorCountItem.Text = "de {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Número total de elementos";
-            // 
-            // bindingNavigatorDeleteItem
-            // 
-            this.bindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
-            this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
-            this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(24, 24);
-            this.bindingNavigatorDeleteItem.Text = "Eliminar";
-            // 
-            // bindingNavigatorMoveFirstItem
-            // 
-            this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
-            this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
-            this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(24, 24);
-            this.bindingNavigatorMoveFirstItem.Text = "Mover primero";
-            // 
-            // bindingNavigatorMovePreviousItem
-            // 
-            this.bindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
-            this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
-            this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(24, 24);
-            this.bindingNavigatorMovePreviousItem.Text = "Mover anterior";
-            // 
-            // bindingNavigatorSeparator
-            // 
-            this.bindingNavigatorSeparator.Name = "bindingNavigatorSeparator";
-            this.bindingNavigatorSeparator.Size = new System.Drawing.Size(6, 27);
-            // 
-            // bindingNavigatorPositionItem
-            // 
-            this.bindingNavigatorPositionItem.AccessibleName = "Posición";
-            this.bindingNavigatorPositionItem.AutoSize = false;
-            this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
-            this.bindingNavigatorPositionItem.Text = "0";
-            this.bindingNavigatorPositionItem.ToolTipText = "Posición actual";
-            // 
-            // bindingNavigatorSeparator1
-            // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
-            this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 27);
-            // 
-            // bindingNavigatorMoveNextItem
-            // 
-            this.bindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
-            this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
-            this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(24, 24);
-            this.bindingNavigatorMoveNextItem.Text = "Mover siguiente";
-            // 
-            // bindingNavigatorMoveLastItem
-            // 
-            this.bindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
-            this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
-            this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(24, 24);
-            this.bindingNavigatorMoveLastItem.Text = "Mover último";
-            // 
-            // bindingNavigatorSeparator2
-            // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
-            this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
-            // 
-            // peliculasBindingNavigatorSaveItem
-            // 
-            this.peliculasBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
-            this.peliculasBindingNavigatorSaveItem.Image = ((System.Drawing.Image)(resources.GetObject("peliculasBindingNavigatorSaveItem.Image")));
-            this.peliculasBindingNavigatorSaveItem.Name = "peliculasBindingNavigatorSaveItem";
-            this.peliculasBindingNavigatorSaveItem.Size = new System.Drawing.Size(24, 24);
-            this.peliculasBindingNavigatorSaveItem.Text = "Guardar datos";
-            this.peliculasBindingNavigatorSaveItem.Click += new System.EventHandler(this.peliculasBindingNavigatorSaveItem_Click);
             // 
             // nombrePeTextBox
             // 
@@ -474,7 +333,7 @@
             this.btnAgregarPeli.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregarPeli.ForeColor = System.Drawing.Color.White;
             this.btnAgregarPeli.Location = new System.Drawing.Point(23, 468);
-            this.btnAgregarPeli.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAgregarPeli.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnAgregarPeli.Name = "btnAgregarPeli";
             this.btnAgregarPeli.Size = new System.Drawing.Size(135, 54);
             this.btnAgregarPeli.TabIndex = 19;
@@ -491,7 +350,7 @@
             this.btnModificarPeli.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModificarPeli.ForeColor = System.Drawing.Color.White;
             this.btnModificarPeli.Location = new System.Drawing.Point(159, 468);
-            this.btnModificarPeli.Margin = new System.Windows.Forms.Padding(2);
+            this.btnModificarPeli.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnModificarPeli.Name = "btnModificarPeli";
             this.btnModificarPeli.Size = new System.Drawing.Size(135, 54);
             this.btnModificarPeli.TabIndex = 19;
@@ -508,7 +367,7 @@
             this.btnEliminarPeli.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminarPeli.ForeColor = System.Drawing.Color.White;
             this.btnEliminarPeli.Location = new System.Drawing.Point(23, 523);
-            this.btnEliminarPeli.Margin = new System.Windows.Forms.Padding(2);
+            this.btnEliminarPeli.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnEliminarPeli.Name = "btnEliminarPeli";
             this.btnEliminarPeli.Size = new System.Drawing.Size(135, 54);
             this.btnEliminarPeli.TabIndex = 19;
@@ -525,7 +384,7 @@
             this.btnBuscarPeli.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscarPeli.ForeColor = System.Drawing.Color.White;
             this.btnBuscarPeli.Location = new System.Drawing.Point(159, 523);
-            this.btnBuscarPeli.Margin = new System.Windows.Forms.Padding(2);
+            this.btnBuscarPeli.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnBuscarPeli.Name = "btnBuscarPeli";
             this.btnBuscarPeli.Size = new System.Drawing.Size(135, 54);
             this.btnBuscarPeli.TabIndex = 19;
@@ -542,7 +401,7 @@
             this.btnMostrarPeli.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMostrarPeli.ForeColor = System.Drawing.Color.White;
             this.btnMostrarPeli.Location = new System.Drawing.Point(23, 578);
-            this.btnMostrarPeli.Margin = new System.Windows.Forms.Padding(2);
+            this.btnMostrarPeli.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnMostrarPeli.Name = "btnMostrarPeli";
             this.btnMostrarPeli.Size = new System.Drawing.Size(271, 27);
             this.btnMostrarPeli.TabIndex = 19;
@@ -616,14 +475,10 @@
             this.Controls.Add(this.imagenPeTextBox);
             this.Controls.Add(categoriaPeLabel);
             this.Controls.Add(this.categoriaPeTextBox);
-            this.Controls.Add(this.peliculasBindingNavigator);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ModPelicula";
             this.Text = "ModPelicula";
             this.Load += new System.EventHandler(this.ModPelicula_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.peliculasBindingNavigator)).EndInit();
-            this.peliculasBindingNavigator.ResumeLayout(false);
-            this.peliculasBindingNavigator.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.peliculasBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.cineDataSet1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.peliculasDataGridView)).EndInit();
@@ -638,19 +493,6 @@
         private System.Windows.Forms.BindingSource peliculasBindingSource;
         private CineDataSet1TableAdapters.PeliculasTableAdapter peliculasTableAdapter;
         private CineDataSet1TableAdapters.TableAdapterManager tableAdapterManager;
-        private System.Windows.Forms.BindingNavigator peliculasBindingNavigator;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorAddNewItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorDeleteItem;
-        private System.Windows.Forms.ToolStripButton peliculasBindingNavigatorSaveItem;
-        private System.Windows.Forms.ToolStripLabel bindingNavigatorCountItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMovePreviousItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator;
-        private System.Windows.Forms.ToolStripTextBox bindingNavigatorPositionItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator1;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveNextItem;
-        private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
-        private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.TextBox nombrePeTextBox;
         private System.Windows.Forms.TextBox webPeTextBox;
         private System.Windows.Forms.TextBox directoresPeTextBox;

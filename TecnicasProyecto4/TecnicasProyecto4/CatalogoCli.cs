@@ -23,6 +23,7 @@ namespace TecnicasProyecto4
         }
 
 
+        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-O15S8EP;Initial Catalog=Cine;User ID=Danny;Password=12345");
 
 
 
@@ -102,6 +103,16 @@ namespace TecnicasProyecto4
         private void bindingNavigatorMovePreviousItem_Click(object sender, EventArgs e)
         {
             C1.BackgroundImage = Image.FromFile(@"" + imagenPeTextBox.Text);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            con.Open();
+            string st = "insert into Comentarios(comentario) values(@comentario)";
+            SqlCommand cmd = new SqlCommand(st, con);
+            cmd.Parameters.AddWithValue("@comentario", lblComentario.Text);
+            cmd.ExecuteNonQuery();
+            con.Close();
         }
     }
 }
