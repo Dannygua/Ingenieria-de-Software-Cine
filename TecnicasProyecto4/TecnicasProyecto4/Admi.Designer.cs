@@ -46,6 +46,8 @@
             this.NomUsu = new System.Windows.Forms.Label();
             this.Logo = new System.Windows.Forms.PictureBox();
             this.barrainicio = new System.Windows.Forms.Panel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.agregarCombos = new System.Windows.Forms.Button();
             this.barramenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnClose)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnMin)).BeginInit();
@@ -56,7 +58,9 @@
             // barramenu
             // 
             this.barramenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(50)))), ((int)(((byte)(83)))));
+            this.barramenu.Controls.Add(this.panel5);
             this.barramenu.Controls.Add(this.panel3);
+            this.barramenu.Controls.Add(this.agregarCombos);
             this.barramenu.Controls.Add(this.panel2);
             this.barramenu.Controls.Add(this.panel4);
             this.barramenu.Controls.Add(this.panel1);
@@ -75,7 +79,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(95)))), ((int)(((byte)(151)))));
-            this.panel3.Location = new System.Drawing.Point(1, 211);
+            this.panel3.Location = new System.Drawing.Point(1, 272);
             this.panel3.Margin = new System.Windows.Forms.Padding(2);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(8, 45);
@@ -93,7 +97,7 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(95)))), ((int)(((byte)(151)))));
-            this.panel4.Location = new System.Drawing.Point(2, 92);
+            this.panel4.Location = new System.Drawing.Point(2, 93);
             this.panel4.Margin = new System.Windows.Forms.Padding(2);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(8, 45);
@@ -129,7 +133,7 @@
             this.button3.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(95)))), ((int)(((byte)(151)))));
             this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button3.ForeColor = System.Drawing.Color.White;
-            this.button3.Location = new System.Drawing.Point(8, 211);
+            this.button3.Location = new System.Drawing.Point(8, 272);
             this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(236, 45);
@@ -149,7 +153,7 @@
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(236, 45);
             this.button2.TabIndex = 0;
-            this.button2.Text = "DULCERIA";
+            this.button2.Text = "COMBOS";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
@@ -161,7 +165,7 @@
             this.ModPeli.ForeColor = System.Drawing.Color.White;
             this.ModPeli.Image = global::TecnicasProyecto4.Properties.Resources.pagos;
             this.ModPeli.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ModPeli.Location = new System.Drawing.Point(8, 92);
+            this.ModPeli.Location = new System.Drawing.Point(8, 93);
             this.ModPeli.Margin = new System.Windows.Forms.Padding(2);
             this.ModPeli.Name = "ModPeli";
             this.ModPeli.Size = new System.Drawing.Size(236, 45);
@@ -194,7 +198,7 @@
             this.barracontenido.Location = new System.Drawing.Point(244, 126);
             this.barracontenido.Margin = new System.Windows.Forms.Padding(2);
             this.barracontenido.Name = "barracontenido";
-            this.barracontenido.Size = new System.Drawing.Size(1205, 634);
+            this.barracontenido.Size = new System.Drawing.Size(1142, 634);
             this.barracontenido.TabIndex = 2;
             // 
             // button6
@@ -204,7 +208,7 @@
             this.button6.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(95)))), ((int)(((byte)(151)))));
             this.button6.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button6.ForeColor = System.Drawing.Color.White;
-            this.button6.Location = new System.Drawing.Point(549, 0);
+            this.button6.Location = new System.Drawing.Point(486, 0);
             this.button6.Margin = new System.Windows.Forms.Padding(2);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(274, 126);
@@ -220,7 +224,7 @@
             this.button7.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(95)))), ((int)(((byte)(151)))));
             this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button7.ForeColor = System.Drawing.Color.White;
-            this.button7.Location = new System.Drawing.Point(827, 1);
+            this.button7.Location = new System.Drawing.Point(764, 1);
             this.button7.Margin = new System.Windows.Forms.Padding(2);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(274, 126);
@@ -234,7 +238,7 @@
             this.btnClose.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnClose.BackgroundImage = global::TecnicasProyecto4.Properties.Resources.cerrar__1_;
             this.btnClose.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnClose.Location = new System.Drawing.Point(1423, 7);
+            this.btnClose.Location = new System.Drawing.Point(1360, 7);
             this.btnClose.Margin = new System.Windows.Forms.Padding(2);
             this.btnClose.Name = "btnClose";
             this.btnClose.Size = new System.Drawing.Size(20, 21);
@@ -247,7 +251,7 @@
             this.btnMin.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMin.BackgroundImage = global::TecnicasProyecto4.Properties.Resources.minimazar;
             this.btnMin.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnMin.Location = new System.Drawing.Point(1399, 7);
+            this.btnMin.Location = new System.Drawing.Point(1336, 7);
             this.btnMin.Margin = new System.Windows.Forms.Padding(2);
             this.btnMin.Name = "btnMin";
             this.btnMin.Size = new System.Drawing.Size(20, 21);
@@ -258,12 +262,12 @@
             // NomUsu
             // 
             this.NomUsu.AutoSize = true;
-            this.NomUsu.Font = new System.Drawing.Font("Lucida Bright", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.NomUsu.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.NomUsu.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(95)))), ((int)(((byte)(151)))));
             this.NomUsu.Location = new System.Drawing.Point(11, 9);
             this.NomUsu.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.NomUsu.Name = "NomUsu";
-            this.NomUsu.Size = new System.Drawing.Size(51, 16);
+            this.NomUsu.Size = new System.Drawing.Size(52, 17);
             this.NomUsu.TabIndex = 3;
             this.NomUsu.Text = "label1";
             // 
@@ -291,15 +295,39 @@
             this.barrainicio.Location = new System.Drawing.Point(0, 0);
             this.barrainicio.Margin = new System.Windows.Forms.Padding(2);
             this.barrainicio.Name = "barrainicio";
-            this.barrainicio.Size = new System.Drawing.Size(1449, 126);
+            this.barrainicio.Size = new System.Drawing.Size(1386, 126);
             this.barrainicio.TabIndex = 0;
             this.barrainicio.MouseDown += new System.Windows.Forms.MouseEventHandler(this.barrainicio_MouseDown);
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(95)))), ((int)(((byte)(151)))));
+            this.panel5.Location = new System.Drawing.Point(1, 211);
+            this.panel5.Margin = new System.Windows.Forms.Padding(2);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(8, 45);
+            this.panel5.TabIndex = 1;
+            // 
+            // agregarCombos
+            // 
+            this.agregarCombos.FlatAppearance.BorderSize = 0;
+            this.agregarCombos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(95)))), ((int)(((byte)(151)))));
+            this.agregarCombos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.agregarCombos.ForeColor = System.Drawing.Color.White;
+            this.agregarCombos.Location = new System.Drawing.Point(8, 211);
+            this.agregarCombos.Margin = new System.Windows.Forms.Padding(2);
+            this.agregarCombos.Name = "agregarCombos";
+            this.agregarCombos.Size = new System.Drawing.Size(236, 45);
+            this.agregarCombos.TabIndex = 2;
+            this.agregarCombos.Text = "AGREGAR COMBOS";
+            this.agregarCombos.UseVisualStyleBackColor = true;
+            this.agregarCombos.Click += new System.EventHandler(this.AgregarCombos_Click_1);
             // 
             // Admi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1449, 760);
+            this.ClientSize = new System.Drawing.Size(1386, 760);
             this.Controls.Add(this.barracontenido);
             this.Controls.Add(this.barramenu);
             this.Controls.Add(this.barrainicio);
@@ -337,6 +365,8 @@
         private System.Windows.Forms.Label NomUsu;
         private System.Windows.Forms.PictureBox Logo;
         private System.Windows.Forms.Panel barrainicio;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Button agregarCombos;
     }
 }
 

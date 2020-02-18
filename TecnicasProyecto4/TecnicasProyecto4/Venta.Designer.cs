@@ -31,6 +31,10 @@
             this.components = new System.ComponentModel.Container();
             System.Windows.Forms.Label Pelicula;
             System.Windows.Forms.Label label2;
+            System.Windows.Forms.Label label4;
+            System.Windows.Forms.Label label5;
+            System.Windows.Forms.Label lblCostoU;
+            System.Windows.Forms.Label label;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Venta));
             this.funcionBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorAddNewItem = new System.Windows.Forms.ToolStripButton();
@@ -57,7 +61,6 @@
             this.btnFHorario = new System.Windows.Forms.Button();
             this.btnFPelicula = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.VAsientos = new System.Windows.Forms.Panel();
             this.btnSeleccionFuncion = new System.Windows.Forms.Button();
             this.BtnVolver = new System.Windows.Forms.Button();
             this.codigoFuTextBox = new System.Windows.Forms.TextBox();
@@ -65,37 +68,100 @@
             this.tableAdapterManager = new TecnicasProyecto4.CineDataSet1TableAdapters.TableAdapterManager();
             this.horariosTableAdapter = new TecnicasProyecto4.CineDataSet1TableAdapters.HorariosTableAdapter();
             this.lblPelicula = new System.Windows.Forms.Label();
+            this.panelAsientos = new System.Windows.Forms.Panel();
+            this.lblAsiento = new System.Windows.Forms.Label();
+            this.cineDataSet4 = new TecnicasProyecto4.CineDataSet4();
+            this.asientosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.asientosTableAdapter = new TecnicasProyecto4.CineDataSet4TableAdapters.AsientosTableAdapter();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.btnComprar = new System.Windows.Forms.Button();
+            this.lblCostoT = new System.Windows.Forms.Label();
+            this.lblCosto = new System.Windows.Forms.Label();
+            this.lblNumAsientos = new System.Windows.Forms.Label();
             Pelicula = new System.Windows.Forms.Label();
             label2 = new System.Windows.Forms.Label();
+            label4 = new System.Windows.Forms.Label();
+            label5 = new System.Windows.Forms.Label();
+            lblCostoU = new System.Windows.Forms.Label();
+            label = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.funcionBindingNavigator)).BeginInit();
             this.funcionBindingNavigator.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.funcionBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.cineDataSet1)).BeginInit();
             this.findCodHoToolStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.horariosBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cineDataSet4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asientosBindingSource)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // Pelicula
             // 
             Pelicula.AutoSize = true;
-            Pelicula.Font = new System.Drawing.Font("Copperplate Gothic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            Pelicula.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             Pelicula.ForeColor = System.Drawing.Color.RoyalBlue;
             Pelicula.Location = new System.Drawing.Point(104, 241);
             Pelicula.Name = "Pelicula";
-            Pelicula.Size = new System.Drawing.Size(99, 18);
+            Pelicula.Size = new System.Drawing.Size(89, 20);
             Pelicula.TabIndex = 10;
             Pelicula.Text = "HORARIO:";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new System.Drawing.Font("Copperplate Gothic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             label2.ForeColor = System.Drawing.Color.RoyalBlue;
             label2.Location = new System.Drawing.Point(104, 202);
             label2.Name = "label2";
-            label2.Size = new System.Drawing.Size(103, 18);
+            label2.Size = new System.Drawing.Size(91, 20);
             label2.TabIndex = 10;
             label2.Text = "PELICULA:";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label4.ForeColor = System.Drawing.Color.AliceBlue;
+            label4.Location = new System.Drawing.Point(12, 12);
+            label4.Name = "label4";
+            label4.Size = new System.Drawing.Size(140, 40);
+            label4.TabIndex = 19;
+            label4.Text = "ASIENTO \r\nSELECCIONADO:";
+            label4.Click += new System.EventHandler(this.Label4_Click);
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label5.ForeColor = System.Drawing.Color.AliceBlue;
+            label5.Location = new System.Drawing.Point(12, 71);
+            label5.Name = "label5";
+            label5.Size = new System.Drawing.Size(99, 20);
+            label5.TabIndex = 21;
+            label5.Text = "#ASIENTOS";
+            // 
+            // lblCostoU
+            // 
+            lblCostoU.AutoSize = true;
+            lblCostoU.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            lblCostoU.ForeColor = System.Drawing.Color.AliceBlue;
+            lblCostoU.Location = new System.Drawing.Point(12, 118);
+            lblCostoU.Name = "lblCostoU";
+            lblCostoU.Size = new System.Drawing.Size(131, 20);
+            lblCostoU.TabIndex = 22;
+            lblCostoU.Text = "COSTO UNIDAD";
+            // 
+            // label
+            // 
+            label.AutoSize = true;
+            label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label.ForeColor = System.Drawing.Color.AliceBlue;
+            label.Location = new System.Drawing.Point(12, 165);
+            label.Name = "label";
+            label.Size = new System.Drawing.Size(118, 20);
+            label.TabIndex = 23;
+            label.Text = "COSTO TOTAL";
             // 
             // funcionBindingNavigator
             // 
@@ -124,7 +190,7 @@
             this.funcionBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.funcionBindingNavigator.Name = "funcionBindingNavigator";
             this.funcionBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.funcionBindingNavigator.Size = new System.Drawing.Size(1399, 27);
+            this.funcionBindingNavigator.Size = new System.Drawing.Size(1335, 27);
             this.funcionBindingNavigator.TabIndex = 0;
             this.funcionBindingNavigator.Text = "bindingNavigator1";
             this.funcionBindingNavigator.RefreshItems += new System.EventHandler(this.funcionBindingNavigator_RefreshItems);
@@ -191,6 +257,7 @@
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Posición";
             this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
             this.bindingNavigatorPositionItem.Text = "0";
@@ -254,7 +321,7 @@
             this.findCodHoToolStripButton});
             this.findCodHoToolStrip.Location = new System.Drawing.Point(0, 27);
             this.findCodHoToolStrip.Name = "findCodHoToolStrip";
-            this.findCodHoToolStrip.Size = new System.Drawing.Size(1399, 25);
+            this.findCodHoToolStrip.Size = new System.Drawing.Size(1335, 25);
             this.findCodHoToolStrip.TabIndex = 3;
             this.findCodHoToolStrip.Text = "findCodHoToolStrip";
             // 
@@ -266,6 +333,7 @@
             // 
             // param1ToolStripTextBox
             // 
+            this.param1ToolStripTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.param1ToolStripTextBox.Name = "param1ToolStripTextBox";
             this.param1ToolStripTextBox.Size = new System.Drawing.Size(100, 25);
             // 
@@ -335,14 +403,6 @@
             this.label1.Text = "label1";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
-            // VAsientos
-            // 
-            this.VAsientos.Dock = System.Windows.Forms.DockStyle.Right;
-            this.VAsientos.Location = new System.Drawing.Point(415, 52);
-            this.VAsientos.Name = "VAsientos";
-            this.VAsientos.Size = new System.Drawing.Size(984, 407);
-            this.VAsientos.TabIndex = 12;
-            // 
             // btnSeleccionFuncion
             // 
             this.btnSeleccionFuncion.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
@@ -353,7 +413,7 @@
             this.btnSeleccionFuncion.ForeColor = System.Drawing.Color.White;
             this.btnSeleccionFuncion.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSeleccionFuncion.Location = new System.Drawing.Point(26, 293);
-            this.btnSeleccionFuncion.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnSeleccionFuncion.Margin = new System.Windows.Forms.Padding(2);
             this.btnSeleccionFuncion.Name = "btnSeleccionFuncion";
             this.btnSeleccionFuncion.Size = new System.Drawing.Size(344, 78);
             this.btnSeleccionFuncion.TabIndex = 13;
@@ -370,8 +430,8 @@
             this.BtnVolver.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnVolver.ForeColor = System.Drawing.Color.White;
             this.BtnVolver.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.BtnVolver.Location = new System.Drawing.Point(11, 405);
-            this.BtnVolver.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.BtnVolver.Location = new System.Drawing.Point(26, 405);
+            this.BtnVolver.Margin = new System.Windows.Forms.Padding(2);
             this.BtnVolver.Name = "BtnVolver";
             this.BtnVolver.Size = new System.Drawing.Size(110, 43);
             this.BtnVolver.TabIndex = 13;
@@ -420,17 +480,127 @@
             this.lblPelicula.TabIndex = 15;
             this.lblPelicula.Text = "label3";
             // 
+            // panelAsientos
+            // 
+            this.panelAsientos.Location = new System.Drawing.Point(445, 94);
+            this.panelAsientos.Name = "panelAsientos";
+            this.panelAsientos.Size = new System.Drawing.Size(566, 277);
+            this.panelAsientos.TabIndex = 16;
+            // 
+            // lblAsiento
+            // 
+            this.lblAsiento.AutoSize = true;
+            this.lblAsiento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAsiento.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblAsiento.Location = new System.Drawing.Point(158, 38);
+            this.lblAsiento.Name = "lblAsiento";
+            this.lblAsiento.Size = new System.Drawing.Size(14, 16);
+            this.lblAsiento.TabIndex = 17;
+            this.lblAsiento.Text = "..";
+            // 
+            // cineDataSet4
+            // 
+            this.cineDataSet4.DataSetName = "CineDataSet4";
+            this.cineDataSet4.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // asientosBindingSource
+            // 
+            this.asientosBindingSource.DataMember = "Asientos";
+            this.asientosBindingSource.DataSource = this.cineDataSet4;
+            // 
+            // asientosTableAdapter
+            // 
+            this.asientosTableAdapter.ClearBeforeFill = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Gold;
+            this.label3.Font = new System.Drawing.Font("Yu Gothic UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(50)))), ((int)(((byte)(83)))));
+            this.label3.Location = new System.Drawing.Point(619, 61);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(241, 30);
+            this.label3.TabIndex = 18;
+            this.label3.Text = "ASIENTOS DISPONIBLES";
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.SteelBlue;
+            this.panel1.Controls.Add(this.btnComprar);
+            this.panel1.Controls.Add(this.lblCostoT);
+            this.panel1.Controls.Add(label);
+            this.panel1.Controls.Add(this.lblCosto);
+            this.panel1.Controls.Add(lblCostoU);
+            this.panel1.Controls.Add(this.lblNumAsientos);
+            this.panel1.Controls.Add(label5);
+            this.panel1.Controls.Add(label4);
+            this.panel1.Controls.Add(this.lblAsiento);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel1.Location = new System.Drawing.Point(1080, 52);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(255, 407);
+            this.panel1.TabIndex = 20;
+            // 
+            // btnComprar
+            // 
+            this.btnComprar.BackColor = System.Drawing.Color.Gold;
+            this.btnComprar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnComprar.Location = new System.Drawing.Point(16, 210);
+            this.btnComprar.Name = "btnComprar";
+            this.btnComprar.Size = new System.Drawing.Size(227, 29);
+            this.btnComprar.TabIndex = 25;
+            this.btnComprar.Text = "COMPRAR";
+            this.btnComprar.UseVisualStyleBackColor = false;
+            this.btnComprar.Click += new System.EventHandler(this.BtnComprar_Click);
+            // 
+            // lblCostoT
+            // 
+            this.lblCostoT.AutoSize = true;
+            this.lblCostoT.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCostoT.ForeColor = System.Drawing.SystemColors.ControlLightLight;
+            this.lblCostoT.Location = new System.Drawing.Point(155, 170);
+            this.lblCostoT.Name = "lblCostoT";
+            this.lblCostoT.Size = new System.Drawing.Size(17, 16);
+            this.lblCostoT.TabIndex = 24;
+            this.lblCostoT.Text = "...";
+            // 
+            // lblCosto
+            // 
+            this.lblCosto.AutoSize = true;
+            this.lblCosto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCosto.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblCosto.Location = new System.Drawing.Point(158, 123);
+            this.lblCosto.Name = "lblCosto";
+            this.lblCosto.Size = new System.Drawing.Size(32, 16);
+            this.lblCosto.TabIndex = 23;
+            this.lblCosto.Text = "5.00";
+            this.lblCosto.Click += new System.EventHandler(this.LblCosto_Click);
+            // 
+            // lblNumAsientos
+            // 
+            this.lblNumAsientos.AutoSize = true;
+            this.lblNumAsientos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNumAsientos.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.lblNumAsientos.Location = new System.Drawing.Point(158, 76);
+            this.lblNumAsientos.Name = "lblNumAsientos";
+            this.lblNumAsientos.Size = new System.Drawing.Size(14, 16);
+            this.lblNumAsientos.TabIndex = 22;
+            this.lblNumAsientos.Text = "..";
+            // 
             // Venta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlDark;
-            this.ClientSize = new System.Drawing.Size(1399, 459);
+            this.ClientSize = new System.Drawing.Size(1335, 459);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.panelAsientos);
             this.Controls.Add(this.lblPelicula);
             this.Controls.Add(this.codigoFuTextBox);
             this.Controls.Add(this.BtnVolver);
             this.Controls.Add(this.btnSeleccionFuncion);
-            this.Controls.Add(this.VAsientos);
             this.Controls.Add(this.label1);
             this.Controls.Add(label2);
             this.Controls.Add(Pelicula);
@@ -452,6 +622,10 @@
             this.findCodHoToolStrip.ResumeLayout(false);
             this.findCodHoToolStrip.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.horariosBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cineDataSet4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.asientosBindingSource)).EndInit();
+            this.panel1.ResumeLayout(false);
+            this.panel1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -482,7 +656,6 @@
         private System.Windows.Forms.Button btnFHorario;
         private System.Windows.Forms.Button btnFPelicula;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel VAsientos;
         private System.Windows.Forms.Button btnSeleccionFuncion;
         private System.Windows.Forms.Button BtnVolver;
         private System.Windows.Forms.TextBox codigoFuTextBox;
@@ -492,5 +665,16 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveFirstItem;
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripButton funcionBindingNavigatorSaveItem;
+        private System.Windows.Forms.Panel panelAsientos;
+        private System.Windows.Forms.Label lblAsiento;
+        private CineDataSet4 cineDataSet4;
+        private System.Windows.Forms.BindingSource asientosBindingSource;
+        private CineDataSet4TableAdapters.AsientosTableAdapter asientosTableAdapter;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnComprar;
+        private System.Windows.Forms.Label lblCostoT;
+        private System.Windows.Forms.Label lblCosto;
+        private System.Windows.Forms.Label lblNumAsientos;
     }
 }

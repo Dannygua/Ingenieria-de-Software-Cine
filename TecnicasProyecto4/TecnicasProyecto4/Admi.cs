@@ -95,14 +95,16 @@ namespace TecnicasProyecto4
             Abrirform(new ModPelicula());
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-
-        }
+        
 
         private void button6_Click(object sender, EventArgs e)
         {
             Abrirform(new VerUsuarios());
+        }
+
+        private void AgregarCombos_Click_1(object sender, EventArgs e)
+        {
+            Abrirform(new AgregarCombos()); 
         }
     }
 }

@@ -36,8 +36,11 @@ namespace TecnicasProyecto4
             System.Windows.Forms.Label label2;
             System.Windows.Forms.Label label3;
             System.Windows.Forms.Label label4;
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CatalogoCli));
             System.Windows.Forms.Label label5;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CatalogoCli));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.btnCompra = new System.Windows.Forms.Button();
             this.peliculasBindingNavigator = new System.Windows.Forms.BindingNavigator(this.components);
             this.peliculasBindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -67,6 +70,15 @@ namespace TecnicasProyecto4
             this.C1 = new System.Windows.Forms.PictureBox();
             this.lblComentario = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.fillByToolStrip1 = new System.Windows.Forms.ToolStrip();
+            this.idPeliculaToolStripLabel = new System.Windows.Forms.ToolStripLabel();
+            this.idPeliculaToolStripTextBox = new System.Windows.Forms.ToolStripTextBox();
+            this.fillByToolStripButton1 = new System.Windows.Forms.ToolStripButton();
+            this.comentariosBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.cineDataSet3 = new TecnicasProyecto4.CineDataSet3();
+            this.comentariosTableAdapter = new TecnicasProyecto4.CineDataSet3TableAdapters.ComentariosTableAdapter();
+            this.comentarios = new System.Windows.Forms.DataGridView();
             Pelicula = new System.Windows.Forms.Label();
             label1 = new System.Windows.Forms.Label();
             label2 = new System.Windows.Forms.Label();
@@ -81,62 +93,77 @@ namespace TecnicasProyecto4
             ((System.ComponentModel.ISupportInitialize)(this.funcionBindingSource)).BeginInit();
             this.fillByToolStrip.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.C1)).BeginInit();
+            this.fillByToolStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.comentariosBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cineDataSet3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.comentarios)).BeginInit();
             this.SuspendLayout();
             // 
             // Pelicula
             // 
             Pelicula.AutoSize = true;
-            Pelicula.Font = new System.Drawing.Font("Copperplate Gothic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            Pelicula.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             Pelicula.ForeColor = System.Drawing.Color.RoyalBlue;
             Pelicula.Location = new System.Drawing.Point(358, 90);
             Pelicula.Name = "Pelicula";
-            Pelicula.Size = new System.Drawing.Size(103, 18);
+            Pelicula.Size = new System.Drawing.Size(91, 20);
             Pelicula.TabIndex = 8;
             Pelicula.Text = "PELICULA:";
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Font = new System.Drawing.Font("Copperplate Gothic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             label1.ForeColor = System.Drawing.Color.RoyalBlue;
             label1.Location = new System.Drawing.Point(358, 135);
             label1.Name = "label1";
-            label1.Size = new System.Drawing.Size(133, 18);
+            label1.Size = new System.Drawing.Size(117, 20);
             label1.TabIndex = 8;
             label1.Text = "WEB OFICIAL:";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Font = new System.Drawing.Font("Copperplate Gothic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             label2.ForeColor = System.Drawing.Color.RoyalBlue;
             label2.Location = new System.Drawing.Point(358, 181);
             label2.Name = "label2";
-            label2.Size = new System.Drawing.Size(107, 18);
+            label2.Size = new System.Drawing.Size(97, 20);
             label2.TabIndex = 8;
             label2.Text = "DIRECTOR:";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Font = new System.Drawing.Font("Copperplate Gothic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             label3.ForeColor = System.Drawing.Color.RoyalBlue;
             label3.Location = new System.Drawing.Point(360, 225);
             label3.Name = "label3";
-            label3.Size = new System.Drawing.Size(101, 18);
+            label3.Size = new System.Drawing.Size(90, 20);
             label3.TabIndex = 8;
             label3.Text = "ACTORES:";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Font = new System.Drawing.Font("Copperplate Gothic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             label4.ForeColor = System.Drawing.Color.RoyalBlue;
             label4.Location = new System.Drawing.Point(360, 269);
             label4.Name = "label4";
-            label4.Size = new System.Drawing.Size(99, 18);
+            label4.Size = new System.Drawing.Size(89, 20);
             label4.TabIndex = 8;
             label4.Text = "SINOPSIS:";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            label5.ForeColor = System.Drawing.Color.RoyalBlue;
+            label5.Location = new System.Drawing.Point(358, 419);
+            label5.Name = "label5";
+            label5.Size = new System.Drawing.Size(127, 20);
+            label5.TabIndex = 23;
+            label5.Text = "COMENTARIOS";
             // 
             // btnCompra
             // 
@@ -146,8 +173,8 @@ namespace TecnicasProyecto4
             this.btnCompra.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(95)))), ((int)(((byte)(151)))));
             this.btnCompra.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCompra.ForeColor = System.Drawing.Color.White;
-            this.btnCompra.Location = new System.Drawing.Point(30, 588);
-            this.btnCompra.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCompra.Location = new System.Drawing.Point(132, 572);
+            this.btnCompra.Margin = new System.Windows.Forms.Padding(2);
             this.btnCompra.Name = "btnCompra";
             this.btnCompra.Size = new System.Drawing.Size(75, 41);
             this.btnCompra.TabIndex = 6;
@@ -177,7 +204,7 @@ namespace TecnicasProyecto4
             this.peliculasBindingNavigator.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.peliculasBindingNavigator.Name = "peliculasBindingNavigator";
             this.peliculasBindingNavigator.PositionItem = this.bindingNavigatorPositionItem;
-            this.peliculasBindingNavigator.Size = new System.Drawing.Size(1167, 27);
+            this.peliculasBindingNavigator.Size = new System.Drawing.Size(1026, 27);
             this.peliculasBindingNavigator.TabIndex = 8;
             this.peliculasBindingNavigator.Text = "bindingNavigator1";
             this.peliculasBindingNavigator.RefreshItems += new System.EventHandler(this.peliculasBindingNavigator_RefreshItems);
@@ -218,6 +245,7 @@ namespace TecnicasProyecto4
             // 
             this.bindingNavigatorPositionItem.AccessibleName = "Posición";
             this.bindingNavigatorPositionItem.AutoSize = false;
+            this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
             this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 23);
             this.bindingNavigatorPositionItem.Text = "0";
@@ -249,7 +277,7 @@ namespace TecnicasProyecto4
             this.nombrePeTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.nombrePeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.peliculasBindingSource, "NombrePe", true));
             this.nombrePeTextBox.Enabled = false;
-            this.nombrePeTextBox.Font = new System.Drawing.Font("Copperplate Gothic Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nombrePeTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nombrePeTextBox.Location = new System.Drawing.Point(534, 87);
             this.nombrePeTextBox.Name = "nombrePeTextBox";
             this.nombrePeTextBox.Size = new System.Drawing.Size(420, 15);
@@ -262,7 +290,7 @@ namespace TecnicasProyecto4
             this.webPeTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.webPeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.peliculasBindingSource, "WebPe", true));
             this.webPeTextBox.Enabled = false;
-            this.webPeTextBox.Font = new System.Drawing.Font("Copperplate Gothic Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.webPeTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.webPeTextBox.Location = new System.Drawing.Point(534, 133);
             this.webPeTextBox.Name = "webPeTextBox";
             this.webPeTextBox.Size = new System.Drawing.Size(420, 15);
@@ -274,7 +302,7 @@ namespace TecnicasProyecto4
             this.directoresPeTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.directoresPeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.peliculasBindingSource, "DirectoresPe", true));
             this.directoresPeTextBox.Enabled = false;
-            this.directoresPeTextBox.Font = new System.Drawing.Font("Copperplate Gothic Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.directoresPeTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.directoresPeTextBox.Location = new System.Drawing.Point(534, 179);
             this.directoresPeTextBox.Name = "directoresPeTextBox";
             this.directoresPeTextBox.Size = new System.Drawing.Size(420, 15);
@@ -286,7 +314,7 @@ namespace TecnicasProyecto4
             this.actoresPeTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.actoresPeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.peliculasBindingSource, "ActoresPe", true));
             this.actoresPeTextBox.Enabled = false;
-            this.actoresPeTextBox.Font = new System.Drawing.Font("Copperplate Gothic Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actoresPeTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.actoresPeTextBox.Location = new System.Drawing.Point(534, 223);
             this.actoresPeTextBox.Name = "actoresPeTextBox";
             this.actoresPeTextBox.Size = new System.Drawing.Size(420, 15);
@@ -298,11 +326,11 @@ namespace TecnicasProyecto4
             this.descripcionPeTextBox.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.descripcionPeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.peliculasBindingSource, "DescripcionPe", true));
             this.descripcionPeTextBox.Enabled = false;
-            this.descripcionPeTextBox.Font = new System.Drawing.Font("Copperplate Gothic Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.descripcionPeTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.descripcionPeTextBox.Location = new System.Drawing.Point(534, 269);
             this.descripcionPeTextBox.Multiline = true;
             this.descripcionPeTextBox.Name = "descripcionPeTextBox";
-            this.descripcionPeTextBox.Size = new System.Drawing.Size(420, 208);
+            this.descripcionPeTextBox.Size = new System.Drawing.Size(420, 136);
             this.descripcionPeTextBox.TabIndex = 14;
             // 
             // horariosBindingSource
@@ -346,7 +374,7 @@ namespace TecnicasProyecto4
             this.fillByToolStripButton});
             this.fillByToolStrip.Location = new System.Drawing.Point(0, 27);
             this.fillByToolStrip.Name = "fillByToolStrip";
-            this.fillByToolStrip.Size = new System.Drawing.Size(1167, 25);
+            this.fillByToolStrip.Size = new System.Drawing.Size(1026, 25);
             this.fillByToolStrip.TabIndex = 19;
             this.fillByToolStrip.Text = "fillByToolStrip";
             // 
@@ -377,7 +405,7 @@ namespace TecnicasProyecto4
             this.imagenPeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.peliculasBindingSource, "ImagenPe", true));
             this.imagenPeTextBox.ForeColor = System.Drawing.SystemColors.ActiveCaption;
             this.imagenPeTextBox.Location = new System.Drawing.Point(435, 392);
-            this.imagenPeTextBox.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.imagenPeTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.imagenPeTextBox.Name = "imagenPeTextBox";
             this.imagenPeTextBox.Size = new System.Drawing.Size(75, 13);
             this.imagenPeTextBox.TabIndex = 21;
@@ -385,44 +413,126 @@ namespace TecnicasProyecto4
             // C1
             // 
             this.C1.Location = new System.Drawing.Point(51, 98);
-            this.C1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.C1.Margin = new System.Windows.Forms.Padding(2);
             this.C1.Name = "C1";
             this.C1.Size = new System.Drawing.Size(260, 390);
             this.C1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.C1.TabIndex = 22;
             this.C1.TabStop = false;
             // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new System.Drawing.Font("Copperplate Gothic Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            label5.ForeColor = System.Drawing.Color.RoyalBlue;
-            label5.Location = new System.Drawing.Point(358, 504);
-            label5.Name = "label5";
-            label5.Size = new System.Drawing.Size(132, 18);
-            label5.TabIndex = 23;
-            label5.Text = "COMENTARIO";
-            // 
             // lblComentario
             // 
-            this.lblComentario.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.lblComentario.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.lblComentario.Location = new System.Drawing.Point(534, 504);
+            this.lblComentario.BackColor = System.Drawing.Color.Lavender;
+            this.lblComentario.Location = new System.Drawing.Point(534, 419);
             this.lblComentario.Multiline = true;
             this.lblComentario.Name = "lblComentario";
-            this.lblComentario.Size = new System.Drawing.Size(420, 76);
+            this.lblComentario.Size = new System.Drawing.Size(329, 56);
             this.lblComentario.TabIndex = 24;
             // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.Color.Gold;
-            this.button1.Location = new System.Drawing.Point(534, 586);
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.button1.Location = new System.Drawing.Point(869, 419);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(126, 23);
+            this.button1.Size = new System.Drawing.Size(85, 43);
             this.button1.TabIndex = 25;
             this.button1.Text = "Agregar Comentario";
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // panel1
+            // 
+            this.panel1.Location = new System.Drawing.Point(212, 540);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(289, 100);
+            this.panel1.TabIndex = 26;
+            // 
+            // fillByToolStrip1
+            // 
+            this.fillByToolStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.idPeliculaToolStripLabel,
+            this.idPeliculaToolStripTextBox,
+            this.fillByToolStripButton1});
+            this.fillByToolStrip1.Location = new System.Drawing.Point(0, 52);
+            this.fillByToolStrip1.Name = "fillByToolStrip1";
+            this.fillByToolStrip1.Size = new System.Drawing.Size(1026, 25);
+            this.fillByToolStrip1.TabIndex = 28;
+            this.fillByToolStrip1.Text = "fillByToolStrip1";
+            // 
+            // idPeliculaToolStripLabel
+            // 
+            this.idPeliculaToolStripLabel.Name = "idPeliculaToolStripLabel";
+            this.idPeliculaToolStripLabel.Size = new System.Drawing.Size(61, 22);
+            this.idPeliculaToolStripLabel.Text = "idPelicula:";
+            // 
+            // idPeliculaToolStripTextBox
+            // 
+            this.idPeliculaToolStripTextBox.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.idPeliculaToolStripTextBox.Name = "idPeliculaToolStripTextBox";
+            this.idPeliculaToolStripTextBox.Size = new System.Drawing.Size(100, 25);
+            // 
+            // fillByToolStripButton1
+            // 
+            this.fillByToolStripButton1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
+            this.fillByToolStripButton1.Name = "fillByToolStripButton1";
+            this.fillByToolStripButton1.Size = new System.Drawing.Size(39, 22);
+            this.fillByToolStripButton1.Text = "FillBy";
+            this.fillByToolStripButton1.Click += new System.EventHandler(this.FillByToolStripButton1_Click);
+            // 
+            // comentariosBindingSource
+            // 
+            this.comentariosBindingSource.DataMember = "Comentarios";
+            this.comentariosBindingSource.DataSource = this.cineDataSet3;
+            // 
+            // cineDataSet3
+            // 
+            this.cineDataSet3.DataSetName = "CineDataSet3";
+            this.cineDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // comentariosTableAdapter
+            // 
+            this.comentariosTableAdapter.ClearBeforeFill = true;
+            // 
+            // comentarios
+            // 
+            this.comentarios.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
+            this.comentarios.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
+            this.comentarios.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
+            this.comentarios.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.comentarios.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.comentarios.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.Gold;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Roboto Condensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.Olive;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.OldLace;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.comentarios.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.comentarios.ColumnHeadersHeight = 30;
+            this.comentarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.comentarios.EnableHeadersVisualStyles = false;
+            this.comentarios.GridColor = System.Drawing.Color.DarkSlateGray;
+            this.comentarios.Location = new System.Drawing.Point(534, 481);
+            this.comentarios.Name = "comentarios";
+            this.comentarios.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Roboto Condensed", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.ActiveCaption;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.comentarios.RowHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Roboto Condensed", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.DarkSlateGray;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.White;
+            this.comentarios.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            this.comentarios.Size = new System.Drawing.Size(420, 159);
+            this.comentarios.TabIndex = 29;
             // 
             // CatalogoCli
             // 
@@ -430,7 +540,10 @@ namespace TecnicasProyecto4
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1167, 660);
+            this.ClientSize = new System.Drawing.Size(1026, 652);
+            this.Controls.Add(this.comentarios);
+            this.Controls.Add(this.fillByToolStrip1);
+            this.Controls.Add(this.panel1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.lblComentario);
             this.Controls.Add(label5);
@@ -451,9 +564,10 @@ namespace TecnicasProyecto4
             this.Controls.Add(this.nombrePeTextBox);
             this.Controls.Add(this.btnCompra);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "CatalogoCli";
             this.Text = "CatalogoCli";
+            this.Load += new System.EventHandler(this.CatalogoCli_Load);
             ((System.ComponentModel.ISupportInitialize)(this.peliculasBindingNavigator)).EndInit();
             this.peliculasBindingNavigator.ResumeLayout(false);
             this.peliculasBindingNavigator.PerformLayout();
@@ -464,6 +578,11 @@ namespace TecnicasProyecto4
             this.fillByToolStrip.ResumeLayout(false);
             this.fillByToolStrip.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.C1)).EndInit();
+            this.fillByToolStrip1.ResumeLayout(false);
+            this.fillByToolStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.comentariosBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cineDataSet3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.comentarios)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -509,5 +628,14 @@ namespace TecnicasProyecto4
         private System.Windows.Forms.PictureBox C1;
         private System.Windows.Forms.TextBox lblComentario;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Panel panel1;
+        private CineDataSet3 cineDataSet3;
+        private System.Windows.Forms.BindingSource comentariosBindingSource;
+        private CineDataSet3TableAdapters.ComentariosTableAdapter comentariosTableAdapter;
+        private System.Windows.Forms.ToolStrip fillByToolStrip1;
+        private System.Windows.Forms.ToolStripLabel idPeliculaToolStripLabel;
+        private System.Windows.Forms.ToolStripTextBox idPeliculaToolStripTextBox;
+        private System.Windows.Forms.ToolStripButton fillByToolStripButton1;
+        private System.Windows.Forms.DataGridView comentarios;
     }
 }

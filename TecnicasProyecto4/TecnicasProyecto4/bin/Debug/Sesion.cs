@@ -14,7 +14,7 @@ namespace TecnicasProyecto4
             InitializeComponent();
         }
 
-        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-O15S8EP;Initial Catalog=Cine;User ID=Danny;Password=12345");
+        SqlConnection con = new SqlConnection("Data Source =LAPTOP-NEOBUSS0; Initial Catalog = Cine; User ID = pablo; Password=pablo");
 
         public void logear(string usuario, string contrasena)
         {
