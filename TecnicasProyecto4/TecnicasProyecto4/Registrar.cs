@@ -13,7 +13,7 @@ namespace TecnicasProyecto4
             InitializeComponent();
         }
 
-        SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-O15S8EP;Initial Catalog=Cine;User ID=Danny;Password=12345");
+        SqlConnection con = new SqlConnection("Data Source =LAPTOP-NEOBUSS0; Initial Catalog = Cine; User ID = pablo; Password=pablo");
 
         public void logear(String NombreUsu, String contra, String Nombre, String Apellido, String Correo, String Fecha, String Cargo)
         {
@@ -178,7 +178,7 @@ namespace TecnicasProyecto4
         private void btnCrear_Click(object sender, EventArgs e)
         {
             con.Open();
-            string st = "insert into Usuarios(NameUse, Pass, Nombres, Apellidos, Correo, fechanacimiento) values(@nombreU, @contra, @nombre, @apellido, @correo, @fecha)";
+            string st = "insert into Usuarios(NameUse, Pass, Nombres, Apellidos, Correo, fechanacimiento, TipoUsuario) values(@nombreU, @contra, @nombre, @apellido, @correo, @fecha, 'Cliente')";
             SqlCommand cmd = new SqlCommand(st, con);
             cmd.Parameters.AddWithValue("@nombre", lblNombre.Text);
             cmd.Parameters.AddWithValue("@apellido", lblApellido.Text);
@@ -188,6 +188,7 @@ namespace TecnicasProyecto4
             cmd.Parameters.AddWithValue("@fecha", FechaN.Value);
             cmd.ExecuteNonQuery();
             con.Close();
+            MessageBox.Show("Usuario creado correctamente!"); 
       
           //  string cadena = "insert into Usuarios(NameUse, Pass, Nombres, Apellidos, Correo, fechanacimiento, TipoUsuario) values ('" & nombre & "'," & apellido & ")";
          //   comando = new SqlCommand()
@@ -203,6 +204,13 @@ namespace TecnicasProyecto4
         private void lblCorreo_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            InicioSesion formulario = new InicioSesion();
+            formulario.Visible = true;
+            Visible = false;
         }
     }
 }

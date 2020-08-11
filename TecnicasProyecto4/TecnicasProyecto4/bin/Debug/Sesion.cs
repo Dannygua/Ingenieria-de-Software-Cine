@@ -35,7 +35,7 @@ namespace TecnicasProyecto4
                 {
 
 
-                    if (dt.Rows[0][1].ToString() == "Administador")
+                    if (dt.Rows[0][1].ToString() == "Administrador")
                     {
 
                         String texto = dt.Rows[0][0].ToString();

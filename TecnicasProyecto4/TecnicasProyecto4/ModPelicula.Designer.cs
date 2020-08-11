@@ -80,80 +80,80 @@
             // nombrePeLabel
             // 
             nombrePeLabel.AutoSize = true;
-            nombrePeLabel.Font = new System.Drawing.Font("Copperplate Gothic Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            nombrePeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             nombrePeLabel.Location = new System.Drawing.Point(21, 174);
             nombrePeLabel.Name = "nombrePeLabel";
-            nombrePeLabel.Size = new System.Drawing.Size(55, 12);
+            nombrePeLabel.Size = new System.Drawing.Size(47, 13);
             nombrePeLabel.TabIndex = 3;
             nombrePeLabel.Text = "Nombre:";
             // 
             // webPeLabel
             // 
             webPeLabel.AutoSize = true;
-            webPeLabel.Font = new System.Drawing.Font("Copperplate Gothic Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            webPeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             webPeLabel.Location = new System.Drawing.Point(21, 200);
             webPeLabel.Name = "webPeLabel";
-            webPeLabel.Size = new System.Drawing.Size(37, 12);
+            webPeLabel.Size = new System.Drawing.Size(36, 13);
             webPeLabel.TabIndex = 5;
             webPeLabel.Text = "Web :";
             // 
             // directoresPeLabel
             // 
             directoresPeLabel.AutoSize = true;
-            directoresPeLabel.Font = new System.Drawing.Font("Copperplate Gothic Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            directoresPeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             directoresPeLabel.Location = new System.Drawing.Point(21, 226);
             directoresPeLabel.Name = "directoresPeLabel";
-            directoresPeLabel.Size = new System.Drawing.Size(77, 12);
+            directoresPeLabel.Size = new System.Drawing.Size(58, 13);
             directoresPeLabel.TabIndex = 7;
             directoresPeLabel.Text = "Directores:";
             // 
             // actoresPeLabel
             // 
             actoresPeLabel.AutoSize = true;
-            actoresPeLabel.Font = new System.Drawing.Font("Copperplate Gothic Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            actoresPeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             actoresPeLabel.Location = new System.Drawing.Point(21, 252);
             actoresPeLabel.Name = "actoresPeLabel";
-            actoresPeLabel.Size = new System.Drawing.Size(59, 12);
+            actoresPeLabel.Size = new System.Drawing.Size(46, 13);
             actoresPeLabel.TabIndex = 9;
             actoresPeLabel.Text = "Actores:";
             // 
             // descripcionPeLabel
             // 
             descripcionPeLabel.AutoSize = true;
-            descripcionPeLabel.Font = new System.Drawing.Font("Copperplate Gothic Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            descripcionPeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             descripcionPeLabel.Location = new System.Drawing.Point(21, 278);
             descripcionPeLabel.Name = "descripcionPeLabel";
-            descripcionPeLabel.Size = new System.Drawing.Size(83, 12);
+            descripcionPeLabel.Size = new System.Drawing.Size(66, 13);
             descripcionPeLabel.TabIndex = 11;
             descripcionPeLabel.Text = "Descripcion:";
             // 
             // imagenPeLabel
             // 
             imagenPeLabel.AutoSize = true;
-            imagenPeLabel.Font = new System.Drawing.Font("Copperplate Gothic Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            imagenPeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             imagenPeLabel.Location = new System.Drawing.Point(21, 304);
             imagenPeLabel.Name = "imagenPeLabel";
-            imagenPeLabel.Size = new System.Drawing.Size(50, 12);
+            imagenPeLabel.Size = new System.Drawing.Size(45, 13);
             imagenPeLabel.TabIndex = 13;
             imagenPeLabel.Text = "Imagen:";
             // 
             // categoriaPeLabel
             // 
             categoriaPeLabel.AutoSize = true;
-            categoriaPeLabel.Font = new System.Drawing.Font("Copperplate Gothic Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            categoriaPeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             categoriaPeLabel.Location = new System.Drawing.Point(21, 425);
             categoriaPeLabel.Name = "categoriaPeLabel";
-            categoriaPeLabel.Size = new System.Drawing.Size(70, 12);
+            categoriaPeLabel.Size = new System.Drawing.Size(55, 13);
             categoriaPeLabel.TabIndex = 15;
             categoriaPeLabel.Text = "Categoria:";
             // 
             // codigoPeLabel
             // 
             codigoPeLabel.AutoSize = true;
-            codigoPeLabel.Font = new System.Drawing.Font("Copperplate Gothic Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            codigoPeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             codigoPeLabel.Location = new System.Drawing.Point(21, 148);
             codigoPeLabel.Name = "codigoPeLabel";
-            codigoPeLabel.Size = new System.Drawing.Size(52, 12);
+            codigoPeLabel.Size = new System.Drawing.Size(43, 13);
             codigoPeLabel.TabIndex = 1;
             codigoPeLabel.Text = "Codigo:";
             // 
@@ -171,7 +171,7 @@
             // 
             this.nombrePeTextBox.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.nombrePeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.peliculasBindingSource, "NombrePe", true));
-            this.nombrePeTextBox.Font = new System.Drawing.Font("Copperplate Gothic Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nombrePeTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nombrePeTextBox.Location = new System.Drawing.Point(120, 171);
             this.nombrePeTextBox.Name = "nombrePeTextBox";
             this.nombrePeTextBox.Size = new System.Drawing.Size(185, 20);
@@ -181,7 +181,7 @@
             // 
             this.webPeTextBox.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.webPeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.peliculasBindingSource, "WebPe", true));
-            this.webPeTextBox.Font = new System.Drawing.Font("Copperplate Gothic Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.webPeTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.webPeTextBox.Location = new System.Drawing.Point(120, 197);
             this.webPeTextBox.Name = "webPeTextBox";
             this.webPeTextBox.Size = new System.Drawing.Size(185, 20);
@@ -191,7 +191,7 @@
             // 
             this.directoresPeTextBox.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.directoresPeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.peliculasBindingSource, "DirectoresPe", true));
-            this.directoresPeTextBox.Font = new System.Drawing.Font("Copperplate Gothic Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.directoresPeTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.directoresPeTextBox.Location = new System.Drawing.Point(120, 223);
             this.directoresPeTextBox.Name = "directoresPeTextBox";
             this.directoresPeTextBox.Size = new System.Drawing.Size(185, 20);
@@ -201,7 +201,7 @@
             // 
             this.actoresPeTextBox.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.actoresPeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.peliculasBindingSource, "ActoresPe", true));
-            this.actoresPeTextBox.Font = new System.Drawing.Font("Copperplate Gothic Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.actoresPeTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.actoresPeTextBox.Location = new System.Drawing.Point(120, 249);
             this.actoresPeTextBox.Name = "actoresPeTextBox";
             this.actoresPeTextBox.Size = new System.Drawing.Size(185, 20);
@@ -211,7 +211,7 @@
             // 
             this.descripcionPeTextBox.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.descripcionPeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.peliculasBindingSource, "DescripcionPe", true));
-            this.descripcionPeTextBox.Font = new System.Drawing.Font("Copperplate Gothic Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.descripcionPeTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.descripcionPeTextBox.Location = new System.Drawing.Point(120, 275);
             this.descripcionPeTextBox.Name = "descripcionPeTextBox";
             this.descripcionPeTextBox.Size = new System.Drawing.Size(185, 20);
@@ -221,7 +221,7 @@
             // 
             this.categoriaPeTextBox.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.categoriaPeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.peliculasBindingSource, "CategoriaPe", true));
-            this.categoriaPeTextBox.Font = new System.Drawing.Font("Copperplate Gothic Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.categoriaPeTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.categoriaPeTextBox.Location = new System.Drawing.Point(120, 422);
             this.categoriaPeTextBox.Name = "categoriaPeTextBox";
             this.categoriaPeTextBox.Size = new System.Drawing.Size(185, 20);
@@ -317,10 +317,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Berlin Sans FB", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(83, 64);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(172, 34);
+            this.label1.Size = new System.Drawing.Size(187, 31);
             this.label1.TabIndex = 18;
             this.label1.Text = "CARTELERA";
             // 
@@ -333,7 +333,7 @@
             this.btnAgregarPeli.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregarPeli.ForeColor = System.Drawing.Color.White;
             this.btnAgregarPeli.Location = new System.Drawing.Point(23, 468);
-            this.btnAgregarPeli.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAgregarPeli.Margin = new System.Windows.Forms.Padding(2);
             this.btnAgregarPeli.Name = "btnAgregarPeli";
             this.btnAgregarPeli.Size = new System.Drawing.Size(135, 54);
             this.btnAgregarPeli.TabIndex = 19;
@@ -350,7 +350,7 @@
             this.btnModificarPeli.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnModificarPeli.ForeColor = System.Drawing.Color.White;
             this.btnModificarPeli.Location = new System.Drawing.Point(159, 468);
-            this.btnModificarPeli.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnModificarPeli.Margin = new System.Windows.Forms.Padding(2);
             this.btnModificarPeli.Name = "btnModificarPeli";
             this.btnModificarPeli.Size = new System.Drawing.Size(135, 54);
             this.btnModificarPeli.TabIndex = 19;
@@ -367,7 +367,7 @@
             this.btnEliminarPeli.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnEliminarPeli.ForeColor = System.Drawing.Color.White;
             this.btnEliminarPeli.Location = new System.Drawing.Point(23, 523);
-            this.btnEliminarPeli.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEliminarPeli.Margin = new System.Windows.Forms.Padding(2);
             this.btnEliminarPeli.Name = "btnEliminarPeli";
             this.btnEliminarPeli.Size = new System.Drawing.Size(135, 54);
             this.btnEliminarPeli.TabIndex = 19;
@@ -384,7 +384,7 @@
             this.btnBuscarPeli.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnBuscarPeli.ForeColor = System.Drawing.Color.White;
             this.btnBuscarPeli.Location = new System.Drawing.Point(159, 523);
-            this.btnBuscarPeli.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnBuscarPeli.Margin = new System.Windows.Forms.Padding(2);
             this.btnBuscarPeli.Name = "btnBuscarPeli";
             this.btnBuscarPeli.Size = new System.Drawing.Size(135, 54);
             this.btnBuscarPeli.TabIndex = 19;
@@ -401,11 +401,11 @@
             this.btnMostrarPeli.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnMostrarPeli.ForeColor = System.Drawing.Color.White;
             this.btnMostrarPeli.Location = new System.Drawing.Point(23, 578);
-            this.btnMostrarPeli.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnMostrarPeli.Margin = new System.Windows.Forms.Padding(2);
             this.btnMostrarPeli.Name = "btnMostrarPeli";
             this.btnMostrarPeli.Size = new System.Drawing.Size(271, 27);
             this.btnMostrarPeli.TabIndex = 19;
-            this.btnMostrarPeli.Text = "MOSTRAR";
+            this.btnMostrarPeli.Text = "ENLISTAR";
             this.btnMostrarPeli.UseVisualStyleBackColor = false;
             this.btnMostrarPeli.Click += new System.EventHandler(this.btnMostrarPeli_Click);
             // 
@@ -429,7 +429,7 @@
             // 
             this.codigoPeTextBox.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.codigoPeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.peliculasBindingSource, "CodigoPe", true));
-            this.codigoPeTextBox.Font = new System.Drawing.Font("Copperplate Gothic Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.codigoPeTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.codigoPeTextBox.Location = new System.Drawing.Point(120, 145);
             this.codigoPeTextBox.Name = "codigoPeTextBox";
             this.codigoPeTextBox.Size = new System.Drawing.Size(185, 20);
@@ -440,7 +440,7 @@
             // 
             this.imagenPeTextBox.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.imagenPeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.peliculasBindingSource, "ImagenPe", true));
-            this.imagenPeTextBox.Font = new System.Drawing.Font("Copperplate Gothic Light", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.imagenPeTextBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.imagenPeTextBox.Location = new System.Drawing.Point(120, 301);
             this.imagenPeTextBox.Name = "imagenPeTextBox";
             this.imagenPeTextBox.Size = new System.Drawing.Size(185, 20);
