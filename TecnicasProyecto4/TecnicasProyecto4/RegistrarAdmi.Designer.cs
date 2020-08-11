@@ -49,7 +49,7 @@
             // 
             this.lblCorreo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(50)))), ((int)(((byte)(83)))));
             this.lblCorreo.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.lblCorreo.Font = new System.Drawing.Font("Calisto MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCorreo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblCorreo.ForeColor = System.Drawing.Color.DimGray;
             this.lblCorreo.Location = new System.Drawing.Point(108, 338);
             this.lblCorreo.Margin = new System.Windows.Forms.Padding(2);
@@ -62,7 +62,7 @@
             // 
             this.lblContra.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(50)))), ((int)(((byte)(83)))));
             this.lblContra.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.lblContra.Font = new System.Drawing.Font("Calisto MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblContra.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblContra.ForeColor = System.Drawing.Color.DimGray;
             this.lblContra.Location = new System.Drawing.Point(523, 216);
             this.lblContra.Margin = new System.Windows.Forms.Padding(2);
@@ -75,7 +75,7 @@
             // 
             this.lblNombreU.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(50)))), ((int)(((byte)(83)))));
             this.lblNombreU.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.lblNombreU.Font = new System.Drawing.Font("Calisto MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombreU.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombreU.ForeColor = System.Drawing.Color.DimGray;
             this.lblNombreU.Location = new System.Drawing.Point(108, 216);
             this.lblNombreU.Margin = new System.Windows.Forms.Padding(2);
@@ -88,7 +88,7 @@
             // 
             this.lblApellido.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(50)))), ((int)(((byte)(83)))));
             this.lblApellido.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.lblApellido.Font = new System.Drawing.Font("Calisto MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblApellido.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblApellido.ForeColor = System.Drawing.Color.DimGray;
             this.lblApellido.Location = new System.Drawing.Point(523, 96);
             this.lblApellido.Margin = new System.Windows.Forms.Padding(2);
@@ -101,7 +101,7 @@
             // 
             this.lblNombre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(50)))), ((int)(((byte)(83)))));
             this.lblNombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.lblNombre.Font = new System.Drawing.Font("Calisto MT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblNombre.ForeColor = System.Drawing.Color.DimGray;
             this.lblNombre.Location = new System.Drawing.Point(108, 96);
             this.lblNombre.Margin = new System.Windows.Forms.Padding(2);
@@ -116,22 +116,23 @@
             this.btnCrear.FlatAppearance.BorderSize = 0;
             this.btnCrear.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(40)))), ((int)(((byte)(95)))), ((int)(((byte)(151)))));
             this.btnCrear.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnCrear.Font = new System.Drawing.Font("Calisto MT", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCrear.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCrear.ForeColor = System.Drawing.Color.Silver;
-            this.btnCrear.Location = new System.Drawing.Point(276, 460);
+            this.btnCrear.Location = new System.Drawing.Point(282, 407);
             this.btnCrear.Margin = new System.Windows.Forms.Padding(2);
             this.btnCrear.Name = "btnCrear";
             this.btnCrear.Size = new System.Drawing.Size(322, 45);
             this.btnCrear.TabIndex = 11;
             this.btnCrear.Text = "REGISTRAR";
             this.btnCrear.UseVisualStyleBackColor = false;
+            this.btnCrear.Click += new System.EventHandler(this.BtnCrear_Click);
             // 
             // RegistrarAdmi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(50)))), ((int)(((byte)(83)))));
-            this.ClientSize = new System.Drawing.Size(923, 592);
+            this.ClientSize = new System.Drawing.Size(923, 490);
             this.Controls.Add(this.FechaN);
             this.Controls.Add(this.lblCorreo);
             this.Controls.Add(this.lblContra);

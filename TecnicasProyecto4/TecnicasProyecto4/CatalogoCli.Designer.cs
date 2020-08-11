@@ -500,7 +500,7 @@ namespace TecnicasProyecto4
             this.comentarios.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.comentarios.BackgroundColor = System.Drawing.SystemColors.ActiveCaption;
             this.comentarios.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.comentarios.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.comentarios.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.comentarios.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.Gold;
@@ -512,10 +512,12 @@ namespace TecnicasProyecto4
             this.comentarios.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.comentarios.ColumnHeadersHeight = 30;
             this.comentarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.comentarios.ColumnHeadersVisible = false;
             this.comentarios.EnableHeadersVisualStyles = false;
             this.comentarios.GridColor = System.Drawing.Color.DarkSlateGray;
             this.comentarios.Location = new System.Drawing.Point(534, 481);
             this.comentarios.Name = "comentarios";
+            this.comentarios.ReadOnly = true;
             this.comentarios.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.ActiveCaption;

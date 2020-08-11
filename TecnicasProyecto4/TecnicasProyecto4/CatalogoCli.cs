@@ -98,7 +98,7 @@ namespace TecnicasProyecto4
 
         private void bindingNavigatorMoveNextItem_Click(object sender, EventArgs e)
         {
-            //C1.BackgroundImage = Image.FromFile(@"" + imagenPeTextBox.Text);
+            C1.BackgroundImage = Image.FromFile(@"" + imagenPeTextBox.Text);
 
             /*SqlCommand Comando = new SqlCommand();
             Comando.CommandText = "SELECT * FROM Comentarios WHERE idPelicula=@idPeli";
@@ -135,7 +135,7 @@ namespace TecnicasProyecto4
 
         private void bindingNavigatorMovePreviousItem_Click(object sender, EventArgs e)
         {
-            //C1.BackgroundImage = Image.FromFile(@"" + imagenPeTextBox.Text);
+            C1.BackgroundImage = Image.FromFile(@"" + imagenPeTextBox.Text);
             /*SqlCommand Comando = new SqlCommand();
             Comando.CommandText = "SELECT * FROM Comentarios WHERE idPelicula=@idPeli";
             Comando.Parameters.AddWithValue("@idPeli", codigoPeTextBox.Text);

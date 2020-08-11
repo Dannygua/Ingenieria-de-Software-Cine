@@ -55,7 +55,8 @@ namespace TecnicasProyecto4
         private void btnCompra_Click(object sender, EventArgs e)
         {
             this.comprasTableAdapter.AgregarVenta(descripcionVeTextBox.Text, fechaVeDateTimePicker.Text, Convert.ToDecimal(montoVeTextBox.Text), nameUseTextBox.Text, Int32.Parse(funciOComboTextBox.Text));
-            this.Visible = false;
+            MessageBox.Show("La compra se realizó exitosamente");
+            
         }
 
         private void contenidoCoTextBox_TextChanged(object sender, EventArgs e)
